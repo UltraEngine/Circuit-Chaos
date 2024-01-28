@@ -1,0 +1,14 @@
+# This .gitignore is optimized for Ultra Engine Projects and is intended to be copied and modified to fit the needs of the project of it's apart of.
+
+# Backup folder:
+backup/**
+
+# Shader Source Code:
+Source/Shaders/
+
+# Compressed backups:
+*.zip
+*.pak
+*.7z
+*.rar
+*.tar.gz

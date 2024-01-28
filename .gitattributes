@@ -1,0 +1,23 @@
+*.bat eol=crlf
+*.sh eol=lf
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+*.vcxproj.filters text eol=crlf
+*.exe binary
+.gitattributes text
+.gitignore text
+
+*.basis binary
+*.bin binary
+*.collider binary
+*.dds binary
+*.tex binary
+*.ico binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.ultra text
+
+*.mdl binary
+*.phys binary
+*.tex binary
