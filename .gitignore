@@ -4,7 +4,7 @@
 backup/**
 
 # Shader Source Code:
-Source/Shaders/
+Source/Shaders/**
 
 # Compressed backups:
 *.zip
