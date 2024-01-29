@@ -1,0 +1,49 @@
+{
+	"project":
+	{
+		"configurations":
+		[
+			{
+				"launch":
+				[
+					{
+						"commandline": "+map \"$MAPFILE\"",
+						"path": "Circuit-Chaos.exe"
+					}
+				],
+				"name": "Run"
+			},
+			{
+				"launch":
+				[
+					{
+						"commandline": "+map \"$MAPFILE\"",
+						"path": "Circuit-Chaos_d.exe"
+					}
+				],
+				"name": "Debug"
+			}
+		],
+		"currentpath": "Materials",
+		"name": "Circuit-Chaos",
+		"recentfiles":
+		[
+			"D:/Projects/Circuit-Chaos/Maps/start.ultra"
+		],
+		"templates":
+		[
+			"Lua",
+			"Common"
+		],
+		"validationLayers":
+		{
+			"debug":
+			[
+				"VK_LAYER_KHRONOS_validation"
+			],
+			"release":
+			{}
+
+		}
+	}
+}
