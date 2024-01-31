@@ -1,0 +1,164 @@
+{
+	"accessors": [
+		{
+			"bufferView": 0,
+			"componentType": 5126,
+			"count": 364,
+			"max": [
+				0.030000008642673492,
+				0.030000006780028343,
+				0.15757568180561066
+			],
+			"min": [
+				-0.030000008642673492,
+				-0.030000008642673492,
+				-0.008000001311302185
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"componentType": 5126,
+			"count": 364,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"componentType": 5126,
+			"count": 364,
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"componentType": 5126,
+			"count": 364,
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 4,
+			"componentType": 5123,
+			"count": 1638,
+			"type": "SCALAR"
+		}
+	],
+	"asset": {
+		"generator": "Ultra Engine glTF Exporter",
+		"version": "2.0"
+	},
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 4368,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 4368,
+			"byteOffset": 4368
+		},
+		{
+			"buffer": 0,
+			"byteLength": 2912,
+			"byteOffset": 8736
+		},
+		{
+			"buffer": 0,
+			"byteLength": 5824,
+			"byteOffset": 11648
+		},
+		{
+			"buffer": 0,
+			"byteLength": 3276,
+			"byteOffset": 17472
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 20748,
+			"uri": "widgetnormal.bin"
+		}
+	],
+	"extensionsUsed": [
+		"MSFT_texture_dds"
+	],
+	"images": [
+		{
+			"uri": "Textures/widgetcolors.png"
+		},
+		{
+			"uri": "Textures/widgetcolors.dds"
+		}
+	],
+	"materials": [
+		{
+			"alphaMode": "OPAQUE",
+			"doubleSided": false,
+			"extras": {
+				"ultra": {
+					"displacement": [
+						0.10000000149011612,
+						0.0
+					],
+					"pickmode": true,
+					"shaderfamily": "Shaders/PBR.fam",
+					"shadow": true
+				}
+			},
+			"name": "WidgetColors",
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicFactor": 0.0,
+				"roughnessFactor": 1.0
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "WidgetNormal",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 1,
+						"POSITION": 0,
+						"TANGENT": 3,
+						"TEXCOORD_0": 2
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"extras": {
+				"ultra": {
+					"collisiontype": 1
+				}
+			},
+			"mesh": 0,
+			"name": "WidgetNormal"
+		}
+	],
+	"scene": 0,
+	"scenes": [
+		{
+			"nodes": [
+				0
+			]
+		}
+	],
+	"textures": [
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 1
+				}
+			},
+			"source": 0
+		}
+	]
+}

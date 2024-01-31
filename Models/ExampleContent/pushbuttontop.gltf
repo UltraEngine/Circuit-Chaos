@@ -1,21 +1,18 @@
 {
-	"accessors":
-	[
+	"accessors": [
 		{
 			"bufferView": 0,
 			"componentType": 5126,
 			"count": 260,
-			"max":
-			[
-				0.112,
-				0.112,
-				0.0576
+			"max": [
+				0.11200001090765,
+				0.1120000034570694,
+				0.05760004371404648
 			],
-			"min":
-			[
-				-0.112,
-				-0.112,
-				-1.74114e-08
+			"min": [
+				-0.1119999811053276,
+				-0.1119999960064888,
+				-1.7411396768807208e-08
 			],
 			"type": "VEC3"
 		},
@@ -23,227 +20,202 @@
 			"bufferView": 1,
 			"componentType": 5126,
 			"count": 260,
-			"type": "VEC2"
+			"type": "VEC3"
 		},
 		{
 			"bufferView": 2,
 			"componentType": 5126,
 			"count": 260,
-			"type": "VEC3"
+			"type": "VEC2"
 		},
 		{
 			"bufferView": 3,
+			"componentType": 5126,
+			"count": 260,
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 4,
 			"componentType": 5123,
 			"count": 858,
 			"type": "SCALAR"
 		}
 	],
-	"asset":
-	{
-		"generator": "Khronos glTF Blender I/O v3.5.30",
+	"asset": {
+		"generator": "Ultra Engine glTF Exporter",
 		"version": "2.0"
 	},
-	"bufferViews":
-	[
+	"bufferViews": [
 		{
 			"buffer": 0,
 			"byteLength": 3120,
-			"byteOffset": 0,
-			"target": 34962
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 3120,
+			"byteOffset": 3120
 		},
 		{
 			"buffer": 0,
 			"byteLength": 2080,
-			"byteOffset": 3120,
-			"target": 34962
+			"byteOffset": 6240
 		},
 		{
 			"buffer": 0,
-			"byteLength": 3120,
-			"byteOffset": 5200,
-			"target": 34962
+			"byteLength": 4160,
+			"byteOffset": 8320
 		},
 		{
 			"buffer": 0,
 			"byteLength": 1716,
-			"byteOffset": 8320,
-			"target": 34963
+			"byteOffset": 12480
 		}
 	],
-	"buffers":
-	[
+	"buffers": [
 		{
-			"byteLength": 10036,
+			"byteLength": 14196,
 			"uri": "pushbuttontop.bin"
 		}
 	],
-	"extensionsUsed":
-	[
+	"extensionsUsed": [
 		"MSFT_texture_dds"
 	],
-	"images":
-	[
+	"images": [
 		{
-			"mimeType": "image/png",
-			"name": "pushbutton_emisson",
-			"uri": "Textures/pushbutton_emisson.png"
-		},
-		{
-			"mimeType": "image/png",
-			"name": "pushbutton_normal",
-			"uri": "Textures/pushbutton_normal.png"
-		},
-		{
-			"mimeType": "image/png",
-			"name": "pushbutton_diffuse",
 			"uri": "Textures/pushbutton_diffuse.png"
 		},
 		{
-			"mimeType": "image/png",
-			"name": "pushbutton_metal-pushbutton_roughness",
-			"uri": "Textures/pushbutton_metal-pushbutton_roughness.png"
-		},
-		{
-			"mimeType": "image/vnd-ms.dds",
-			"name": "pushbutton_diffuse",
 			"uri": "Textures/pushbutton_diffuse.dds"
 		},
 		{
-			"mimeType": "image/vnd-ms.dds",
-			"name": "pushbutton_metal-pushbutton_roughness",
-			"uri": "Textures/pushbutton_metal-pushbutton_roughness.dds"
+			"uri": "Textures/pushbutton_normal.png"
 		},
 		{
-			"mimeType": "image/vnd-ms.dds",
-			"name": "pushbutton_normal",
 			"uri": "Textures/pushbutton_normal.dds"
 		},
 		{
-			"mimeType": "image/vnd-ms.dds",
-			"name": "pushbutton_emisson",
+			"uri": "Textures/pushbutton_metal-pushbutton_roughness.png"
+		},
+		{
+			"uri": "Textures/pushbutton_metal-pushbutton_roughness.dds"
+		},
+		{
+			"uri": "Textures/pushbutton_emisson.png"
+		},
+		{
 			"uri": "Textures/pushbutton_emisson.dds"
 		}
 	],
-	"materials":
-	[
+	"materials": [
 		{
-			"emissiveFactor":
-			[
-				1,
-				1,
-				1
+			"alphaMode": "OPAQUE",
+			"doubleSided": false,
+			"emissiveFactor": [
+				1.0,
+				1.0,
+				1.0
 			],
-			"emissiveTexture":
-			{
-				"index": 0
+			"emissiveTexture": {
+				"index": 3
+			},
+			"extras": {
+				"ultra": {
+					"displacement": [
+						0.10000000149011612,
+						0.0
+					],
+					"pickmode": true,
+					"shaderfamily": "Shaders/PBR.fam",
+					"shadow": true
+				}
 			},
 			"name": "PushButton",
-			"normalTexture":
-			{
+			"normalTexture": {
 				"index": 1
 			},
-			"pbrMetallicRoughness":
-			{
-				"baseColorTexture":
-				{
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicFactor": 1.0,
+				"metallicRoughnessTexture": {
 					"index": 2
 				},
-				"metallicRoughnessTexture":
-				{
-					"index": 3
-				}
+				"roughnessFactor": 1.0
 			}
 		}
 	],
-	"meshes":
-	[
+	"meshes": [
 		{
 			"name": "PushButtonTop",
-			"primitives":
-			[
+			"primitives": [
 				{
-					"attributes":
-					{
-						"NORMAL": 2,
+					"attributes": {
+						"NORMAL": 1,
 						"POSITION": 0,
-						"TEXCOORD_0": 1
+						"TANGENT": 3,
+						"TEXCOORD_0": 2
 					},
-					"indices": 3,
-					"material": 0
+					"indices": 4,
+					"material": 0,
+					"mode": 4
 				}
 			]
 		}
 	],
-	"nodes":
-	[
+	"nodes": [
 		{
+			"extras": {
+				"ultra": {
+					"collisiontype": 1,
+					"physicsmode": 1
+				}
+			},
 			"mesh": 0,
 			"name": "PushButtonTop"
 		}
 	],
-	"samplers":
-	[
-		{
-			"magFilter": 9729,
-			"minFilter": 9987
-		}
-	],
 	"scene": 0,
-	"scenes":
-	[
+	"scenes": [
 		{
-			"name": "Scene",
-			"nodes":
-			[
+			"nodes": [
 				0
 			]
 		}
 	],
-	"textures":
-	[
+	"textures": [
 		{
-			"extensions":
-			{
-				"MSFT_texture_dds":
-				{
-					"source": 7
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 1
 				}
 			},
-			"sampler": 0,
 			"source": 0
 		},
 		{
-			"extensions":
-			{
-				"MSFT_texture_dds":
-				{
-					"source": 6
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 3
 				}
 			},
-			"sampler": 0,
-			"source": 1
-		},
-		{
-			"extensions":
-			{
-				"MSFT_texture_dds":
-				{
-					"source": 4
-				}
-			},
-			"sampler": 0,
 			"source": 2
 		},
 		{
-			"extensions":
-			{
-				"MSFT_texture_dds":
-				{
+			"extensions": {
+				"MSFT_texture_dds": {
 					"source": 5
 				}
 			},
-			"sampler": 0,
-			"source": 3
+			"source": 4
+		},
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 7
+				}
+			},
+			"source": 6
 		}
 	]
 }
