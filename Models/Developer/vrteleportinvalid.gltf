@@ -1,0 +1,164 @@
+{
+	"accessors": [
+		{
+			"bufferView": 0,
+			"componentType": 5126,
+			"count": 1699,
+			"max": [
+				0.30000001192092896,
+				0.05984704568982124,
+				0.30000001192092896
+			],
+			"min": [
+				-0.30000001192092896,
+				0.00015295417688321322,
+				-0.30000001192092896
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"componentType": 5126,
+			"count": 1699,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"componentType": 5126,
+			"count": 1699,
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"componentType": 5126,
+			"count": 1699,
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 4,
+			"componentType": 5123,
+			"count": 4752,
+			"type": "SCALAR"
+		}
+	],
+	"asset": {
+		"generator": "Ultra Engine glTF Exporter",
+		"version": "2.0"
+	},
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 20388,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 20388,
+			"byteOffset": 20388
+		},
+		{
+			"buffer": 0,
+			"byteLength": 13592,
+			"byteOffset": 40776
+		},
+		{
+			"buffer": 0,
+			"byteLength": 27184,
+			"byteOffset": 54368
+		},
+		{
+			"buffer": 0,
+			"byteLength": 9504,
+			"byteOffset": 81552
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 91056,
+			"uri": "vrteleportinvalid.bin"
+		}
+	],
+	"extensionsUsed": [
+		"MSFT_texture_dds"
+	],
+	"images": [
+		{
+			"uri": "Textures/vrteleport.png"
+		},
+		{
+			"uri": "Textures/vrteleport.dds"
+		}
+	],
+	"materials": [
+		{
+			"alphaMode": "OPAQUE",
+			"doubleSided": false,
+			"extras": {
+				"ultra": {
+					"displacement": [
+						0.10000000149011612,
+						0.0
+					],
+					"pickmode": true,
+					"shaderfamily": "Shaders/Unlit.fam",
+					"shadow": false
+				}
+			},
+			"name": "VRTeleport",
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicFactor": 0.0,
+				"roughnessFactor": 0.5
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "VRTeleportInvalid",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 1,
+						"POSITION": 0,
+						"TANGENT": 3,
+						"TEXCOORD_0": 2
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"extras": {
+				"ultra": {
+					"collisiontype": 1
+				}
+			},
+			"mesh": 0,
+			"name": "VRTeleportInvalid"
+		}
+	],
+	"scene": 0,
+	"scenes": [
+		{
+			"nodes": [
+				0
+			]
+		}
+	],
+	"textures": [
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 1
+				}
+			},
+			"source": 0
+		}
+	]
+}

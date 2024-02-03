@@ -11,7 +11,7 @@
 			-0.02500000037252903
 		],
 		"metallic": 1.0,
-		"pickmode": false,
+		"pickmode": true,
 		"roughness": 0.5,
 		"shaderfamily": "Shaders/PBR.fam",
 		"shadow": true,
