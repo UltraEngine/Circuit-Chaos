@@ -1072,8 +1072,13 @@
 				"castshadows": false,
 				"collisiontype": 0,
 				"components": {
-					"VRPlayer": {}
+					"FirstPersonControls": {
+						"mouselookspeed": 1,
+						"mousesmoothing": 0,
+						"movespeed": 4
+					}
 				},
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -1112,13 +1117,13 @@
 			"viewports": [
 				{
 					"cameraposition": [
-						0.0378068,
-						0.540496,
-						-3.34566
+						-0.406515,
+						1.92716,
+						-1.77101
 					],
 					"camerarotation": [
-						40.2561,
-						-0.6675,
+						13.9249,
+						25.8468,
 						0
 					],
 					"gridsize": 0,
@@ -1127,9 +1132,9 @@
 				},
 				{
 					"cameraposition": [
-						0.137285,
-						-3.81772e-07,
-						-2.13502
+						0.614083,
+						-1.79764e-06,
+						-10.0531
 					],
 					"camerarotation": [
 						90,
@@ -1138,12 +1143,12 @@
 					],
 					"gridsize": 0,
 					"view": 3,
-					"zoom": 207.36
+					"zoom": 358.318
 				},
 				{
 					"cameraposition": [
-						-0.769076,
-						3.60084,
+						0.353402,
+						1.38943,
 						0
 					],
 					"camerarotation": [
@@ -1153,13 +1158,13 @@
 					],
 					"gridsize": 0,
 					"view": 5,
-					"zoom": 100
+					"zoom": 207.36
 				},
 				{
 					"cameraposition": [
-						2.54819e-07,
-						2.55332,
-						-1.42505
+						1.80077e-06,
+						1.58646,
+						-10.0706
 					],
 					"camerarotation": [
 						0,
@@ -1168,7 +1173,7 @@
 					],
 					"gridsize": 2,
 					"view": 1,
-					"zoom": 100
+					"zoom": 1069.93
 				}
 			]
 		},
