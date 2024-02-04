@@ -1,0 +1,15 @@
+{
+	"material": {
+		"displacement": [
+			0.05000000074505806,
+			-0.02500000037252903
+		],
+		"metallic": 0.0,
+		"pickmode": false,
+		"roughness": 1.0,
+		"shaderfamily": "Shaders/Unlit.fam",
+		"shadow": true,
+		"texture0": "./Textures/flash01.dds",
+		"transparent": true
+	}
+}

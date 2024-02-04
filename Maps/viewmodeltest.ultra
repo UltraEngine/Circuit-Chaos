@@ -1,0 +1,199 @@
+{
+	"scene": {
+		"ambientlight": [
+			0.0,
+			0.0,
+			0.0
+		],
+		"base": "",
+		"diffusereflection": {
+			"path": "Materials/Environment/Default/diffuse.dds"
+		},
+		"entities": [
+			{
+				"castshadows": true,
+				"collisiontype": 0,
+				"color": [
+					1.5,
+					1.2999999523162842,
+					0.9647058844566345,
+					1.0
+				],
+				"directionallight": {
+					"range": [
+						-500.0,
+						500.0
+					]
+				},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"matrix": [
+					"0x3f51b3f4",
+					"0x0",
+					"0xbf12d5e5",
+					"0x0",
+					"0x3f051404",
+					"0x3ed86170",
+					"0x3f3e0e2b",
+					"0x0",
+					"0x3e7838b4",
+					"0xbf6803c5",
+					"0x3eb13fa8",
+					"0x0",
+					"0x0",
+					"0x3f23d70a",
+					"0x0",
+					"0x3f800000"
+				],
+				"name": "Sun Light",
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0x0",
+					"0x3f23d70a",
+					"0x0"
+				],
+				"quaternion": [
+					"0xbf032eb9",
+					"0xbe81d985",
+					"0x3e25725e",
+					"0x3f4dea50"
+				],
+				"reflection": true,
+				"rotation": [
+					"0x42820000",
+					"0x420c0000",
+					"0x0"
+				],
+				"uuid": "9fe25e08-d549-417b-975b-389e720d41cc"
+			},
+			{
+				"camera": {
+					"clearcolor": [
+						0.125,
+						0.125,
+						0.125
+					],
+					"clearmode": 3,
+					"fov": 64.0,
+					"range": [
+						0.10000000149011612,
+						1000.0
+					]
+				},
+				"castshadows": false,
+				"collisiontype": 0,
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"name": "Camera",
+				"physicsmode": 0,
+				"pickmode": 0,
+				"reflection": true,
+				"uuid": "ce17b40c-c311-4b2c-8fa0-1c9796f2ea34"
+			},
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"components": {
+					"Animator": {
+						"animationname": "Idle",
+						"animationspeed": 1,
+						"autoplay": true,
+						"bleed": 0,
+						"loop": true
+					}
+				},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Weapons/ViewModels/viewmodel.gltf"
+				},
+				"name": "Arm_Robot",
+				"physicsmode": 0,
+				"pickmode": 1,
+				"reflection": true,
+				"uuid": "e07a7ee7-fcc4-4214-8ec3-52fc27a79320"
+			}
+		],
+		"extras": {
+			"viewports": [
+				{
+					"cameraposition": [
+						-1.06693,
+						0.505864,
+						-0.783696
+					],
+					"camerarotation": [
+						21.3241,
+						414.028,
+						0
+					],
+					"gridsize": 0,
+					"view": 0,
+					"zoom": 1.42815
+				},
+				{
+					"cameraposition": [
+						-0.50025,
+						4.53293e-08,
+						0.2535
+					],
+					"camerarotation": [
+						90,
+						0,
+						0
+					],
+					"gridsize": 0,
+					"view": 3,
+					"zoom": 83.3333
+				},
+				{
+					"cameraposition": [
+						-0.144375,
+						-0.277875,
+						0
+					],
+					"camerarotation": [
+						0,
+						0,
+						0
+					],
+					"gridsize": 0,
+					"view": 5,
+					"zoom": 144
+				},
+				{
+					"cameraposition": [
+						0,
+						0,
+						0
+					],
+					"camerarotation": [
+						0,
+						90,
+						0
+					],
+					"gridsize": 0,
+					"view": 1,
+					"zoom": 100
+				}
+			]
+		},
+		"gravity": [
+			0.0,
+			-20.0,
+			0.0
+		],
+		"iblintensity": 1.0,
+		"specularreflection": {
+			"path": "Materials/Environment/Default/specular.dds"
+		}
+	}
+}

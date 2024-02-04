@@ -1,0 +1,198 @@
+{
+	"accessors": [
+		{
+			"bufferView": 0,
+			"componentType": 5126,
+			"count": 3344,
+			"max": [
+				0.3659999668598175,
+				0.6932446956634521,
+				3.124934196472168
+			],
+			"min": [
+				-0.3659999668598175,
+				-0.9437405467033386,
+				-3.0337133407592773
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"componentType": 5126,
+			"count": 3344,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"componentType": 5126,
+			"count": 3344,
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"componentType": 5126,
+			"count": 3344,
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 4,
+			"componentType": 5123,
+			"count": 6570,
+			"type": "SCALAR"
+		}
+	],
+	"asset": {
+		"generator": "Ultra Engine glTF Exporter",
+		"version": "2.0"
+	},
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 40128,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 40128,
+			"byteOffset": 40128
+		},
+		{
+			"buffer": 0,
+			"byteLength": 26752,
+			"byteOffset": 80256
+		},
+		{
+			"buffer": 0,
+			"byteLength": 53504,
+			"byteOffset": 107008
+		},
+		{
+			"buffer": 0,
+			"byteLength": 13140,
+			"byteOffset": 160512
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 173652,
+			"uri": "gun.bin"
+		}
+	],
+	"extensionsUsed": [
+		"MSFT_texture_dds"
+	],
+	"images": [
+		{
+			"uri": "Textures/BaseColor_Gun.png"
+		},
+		{
+			"uri": "Textures/BaseColor_Gun.dds"
+		},
+		{
+			"uri": "Textures/Normal_Gun.png"
+		},
+		{
+			"uri": "Textures/Normal_Gun.dds"
+		},
+		{
+			"uri": "Textures/AOMetalRough_Gun.png"
+		},
+		{
+			"uri": "Textures/AOMetalRough_Gun.dds"
+		}
+	],
+	"materials": [
+		{
+			"alphaMode": "OPAQUE",
+			"doubleSided": false,
+			"extras": {
+				"ultra": {
+					"displacement": [
+						0.10000000149011612,
+						0.0
+					],
+					"pickmode": true,
+					"shaderfamily": "Shaders/PBR.fam",
+					"shadow": true
+				}
+			},
+			"name": "gun",
+			"normalTexture": {
+				"index": 1
+			},
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicFactor": 1.0,
+				"metallicRoughnessTexture": {
+					"index": 2
+				},
+				"roughnessFactor": 1.0
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "gun",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 1,
+						"POSITION": 0,
+						"TANGENT": 3,
+						"TEXCOORD_0": 2
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"extras": {
+				"ultra": {
+					"collisiontype": 1
+				}
+			},
+			"mesh": 0,
+			"name": "gun"
+		}
+	],
+	"scene": 0,
+	"scenes": [
+		{
+			"nodes": [
+				0
+			]
+		}
+	],
+	"textures": [
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 1
+				}
+			},
+			"source": 0
+		},
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 3
+				}
+			},
+			"source": 2
+		},
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 5
+				}
+			},
+			"source": 4
+		}
+	]
+}
