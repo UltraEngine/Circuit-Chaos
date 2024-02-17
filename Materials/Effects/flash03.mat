@@ -9,7 +9,7 @@
 		"roughness": 1.0,
 		"shaderfamily": "Shaders/Unlit.fam",
 		"shadow": false,
-		"texture0": "Materials/Effects/Textures/flash01.dds",
+		"texture0": "Materials/Effects/Textures/flash03.dds",
 		"transparent": true
 	}
 }
