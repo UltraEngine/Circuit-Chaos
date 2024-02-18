@@ -1,0 +1,199 @@
+{
+	"accessors": [
+		{
+			"bufferView": 0,
+			"componentType": 5126,
+			"count": 3352,
+			"max": [
+				0.04784117639064789,
+				0.09061649441719055,
+				0.3965475261211395
+			],
+			"min": [
+				-0.0478411540389061,
+				-0.12335970997810364,
+				-0.40847134590148926
+			],
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 1,
+			"componentType": 5126,
+			"count": 3352,
+			"type": "VEC3"
+		},
+		{
+			"bufferView": 2,
+			"componentType": 5126,
+			"count": 3352,
+			"type": "VEC2"
+		},
+		{
+			"bufferView": 3,
+			"componentType": 5126,
+			"count": 3352,
+			"type": "VEC4"
+		},
+		{
+			"bufferView": 4,
+			"componentType": 5123,
+			"count": 6570,
+			"type": "SCALAR"
+		}
+	],
+	"asset": {
+		"generator": "Ultra Engine glTF Exporter",
+		"version": "2.0"
+	},
+	"bufferViews": [
+		{
+			"buffer": 0,
+			"byteLength": 40224,
+			"byteOffset": 0
+		},
+		{
+			"buffer": 0,
+			"byteLength": 40224,
+			"byteOffset": 40224
+		},
+		{
+			"buffer": 0,
+			"byteLength": 26816,
+			"byteOffset": 80448
+		},
+		{
+			"buffer": 0,
+			"byteLength": 53632,
+			"byteOffset": 107264
+		},
+		{
+			"buffer": 0,
+			"byteLength": 13140,
+			"byteOffset": 160896
+		}
+	],
+	"buffers": [
+		{
+			"byteLength": 174036,
+			"uri": "w_mk02.bin"
+		}
+	],
+	"extensionsUsed": [
+		"MSFT_texture_dds"
+	],
+	"images": [
+		{
+			"uri": "Textures/mk02_diffuse.png"
+		},
+		{
+			"uri": "Textures/mk02_diffuse.dds"
+		},
+		{
+			"uri": "Textures/mk02_normal.png"
+		},
+		{
+			"uri": "Textures/mk02_normal.dds"
+		},
+		{
+			"uri": "Textures/mk02_arm.png"
+		},
+		{
+			"uri": "Textures/mk02_arm.dds"
+		}
+	],
+	"materials": [
+		{
+			"alphaMode": "OPAQUE",
+			"doubleSided": true,
+			"extras": {
+				"ultra": {
+					"displacement": [
+						0.10000000149011612,
+						0.0
+					],
+					"pickmode": true,
+					"shaderfamily": "Shaders/PBR.fam",
+					"shadow": true
+				}
+			},
+			"name": "MK02",
+			"normalTexture": {
+				"index": 1
+			},
+			"pbrMetallicRoughness": {
+				"baseColorTexture": {
+					"index": 0
+				},
+				"metallicFactor": 1.0,
+				"metallicRoughnessTexture": {
+					"index": 2
+				},
+				"roughnessFactor": 1.0
+			}
+		}
+	],
+	"meshes": [
+		{
+			"name": "MK02",
+			"primitives": [
+				{
+					"attributes": {
+						"NORMAL": 1,
+						"POSITION": 0,
+						"TANGENT": 3,
+						"TEXCOORD_0": 2
+					},
+					"indices": 4,
+					"material": 0,
+					"mode": 4
+				}
+			]
+		}
+	],
+	"nodes": [
+		{
+			"extras": {
+				"ultra": {
+					"collisiontype": 1,
+					"physicsmode": 1
+				}
+			},
+			"mesh": 0,
+			"name": "MK02"
+		}
+	],
+	"scene": 0,
+	"scenes": [
+		{
+			"nodes": [
+				0
+			]
+		}
+	],
+	"textures": [
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 1
+				}
+			},
+			"source": 0
+		},
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 3
+				}
+			},
+			"source": 2
+		},
+		{
+			"extensions": {
+				"MSFT_texture_dds": {
+					"source": 5
+				}
+			},
+			"source": 4
+		}
+	]
+}
