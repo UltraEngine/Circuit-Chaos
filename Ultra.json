@@ -24,12 +24,14 @@
 				"name": "Debug"
 			}
 		],
-		"currentpath": "Models/Props",
+		"currentpath": "Materials/Developer",
 		"name": "Circuit-Chaos",
 		"recentfiles":
 		[
-			"D:/Projects/Circuit-Chaos/Maps/devtest.ultra",
-			"D:/Projects/Circuit-Chaos/Maps/start.ultra"
+			"D:/Projects/Circuit-Chaos/Maps/reference_size.ultra",
+			"D:/Projects/Circuit-Chaos/Maps/viewmodeltest.ultra",
+			"D:/Projects/Circuit-Chaos/Maps/start.ultra",
+			"D:/Projects/Circuit-Chaos/Maps/devtest.ultra"
 		],
 		"templates":
 		[

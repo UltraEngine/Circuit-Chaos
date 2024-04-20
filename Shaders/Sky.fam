@@ -11,8 +11,8 @@
 					{
 						"base":
 						{
-							"vertex": "Shaders/Sky.vert.spv",
-							"fragment": "Shaders/Sky.frag.spv"
+							"vertex": "Shaders/Sky/Sky.vert",
+							"fragment": "Shaders/Sky/Sky.frag"
 						}
 					}
 				}

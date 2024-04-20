@@ -12,8 +12,8 @@
 					{
 						"base":
 						{
-							"fragment": "Shaders/Grid.frag.spv",
-							"transparency":"Shaders/Grid.frag.spv"
+							"fragment": "Shaders/Editor/Grid.frag",
+							"transparency":"Shaders/Editor/Grid.frag"
 						}
 					}
 				}

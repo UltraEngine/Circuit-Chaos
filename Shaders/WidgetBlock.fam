@@ -13,14 +13,14 @@
 					{
 						"base":
 						{
-							"vertex": "Shaders/WidgetBlock.vert.spv",
-							"fragment": "Shaders/WidgetBlock.frag.spv",
-							"transparency":"Shaders/WidgetBlock.frag.spv"
+							"vertex": "Shaders/GUI/WidgetBlock.vert",
+							"fragment": "Shaders/GUI/WidgetBlock.frag",
+							"transparency": "Shaders/GUI/WidgetBlock.frag"
 						},
 						"depthPass":
 						{
-							"vertex": "Shaders/WidgetBlock.vert.spv",
-							"fragment": "Shaders/DepthPass_WidgetBlock.frag.spv"
+							"vertex": "Shaders/GUI/WidgetBlock.vert",
+							"fragment": "Shaders/DepthPass/DepthPass_WidgetBlock.frag"
 						}
 					}
 				}

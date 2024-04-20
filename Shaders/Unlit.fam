@@ -3,9 +3,8 @@
 	{
 		"textures":
 		[
-			"Albedo"
+			"Base"
 		],
-		"root": "./PBR.fam",
 		"static":
 		{
 			"float":
@@ -16,29 +15,19 @@
 					{
 						"base":
 						{
-							"fragment": "Shaders/Unlit.frag.spv",
-							"transparency":"Shaders/Unlit_transparency.frag.spv"
-						}
-					},
-					"isolines":
-					{
-						"base":
+							"vertex": "Shaders/PBR/PBR.vert",
+							"fragment": "Shaders/Unlit/Unlit.frag",
+							"animation": "Shaders/PBR/PBR_Animated.vert"	
+						},
+						"depthPass":
 						{
-							"fragment": "Shaders/Unlit.frag.spv"
-						}
-					},
-					"triangles":
-					{
-						"base":
+							"vertex": "Shaders/DepthPass/DepthPass.vert",
+							"animation": "Shaders/DepthPass/DepthPass_Animated.vert"
+						},
+						"shadow":
 						{
-							"fragment": "Shaders/Unlit.frag.spv"
-						}
-					},
-					"quads":
-					{
-						"base":
-						{
-							"fragment": "Shaders/Unlit.frag.spv"
+							"vertex": "Shaders/Shadow/Shadow.vert",
+							"animation": "Shaders/Shadow/Shadow_Animated.vert"
 						}
 					}
 				},
@@ -48,28 +37,21 @@
 					{
 						"base":
 						{
-							"fragment": "Shaders/Unlit_Masked.frag.spv"
-						}
-					},
-					"isolines":
-					{
-						"base":
+							"vertex": "Shaders/PBR/PBR_Masked.vert",
+							"fragment": "Shaders/Unlit/Unlit_Masked.frag",
+							"animation": "Shaders/PBR/PBR_Animated.vert"	
+						},
+						"depthPass":
 						{
-							"fragment": "Shaders/Unlit_Masked.frag.spv"
-						}
-					},
-					"triangles":
-					{
-						"base":
+							"fragment": "Shaders/DepthPass/DepthPass_Masked.frag",
+							"vertex": "Shaders/DepthPass/DepthPass_Masked.vert",
+							"animation": "Shaders/DepthPass/DepthPass_Animated.vert"
+						},
+						"shadow":
 						{
-							"fragment": "Shaders/Unlit_Masked.frag.spv"
-						}
-					},
-					"quads":
-					{
-						"base":
-						{
-							"fragment": "Shaders/Unlit_Masked.frag.spv"
+							"fragment": "Shaders/Shadow/Shadow.frag",
+							"vertex": "Shaders/Shadow/Shadow.vert",
+							"animation": "Shaders/Shadow/Shadow_Animated.vert"
 						}
 					}
 				}

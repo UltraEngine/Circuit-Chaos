@@ -1,0 +1,22 @@
+{
+	"material": {
+		"displacement": [
+			0.10000000149011612,
+			0.0
+		],
+		"emission": [
+			1.0,
+			1.0,
+			1.0
+		],
+		"metallic": 1.0,
+		"pickmode": true,
+		"roughness": 1.0,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"texture0": "./Textures/pushbutton_diffuse.dds",
+		"texture1": "./Textures/pushbutton_normal.dds",
+		"texture2": "./Textures/pushbutton_metal-pushbutton_roughness.dds",
+		"texture4": "./Textures/pushbutton_emisson.dds"
+	}
+}

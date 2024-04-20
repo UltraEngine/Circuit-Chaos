@@ -1,0 +1,22 @@
+{
+	"material": {
+		"displacement": [
+			0.10000000149011612,
+			0.0
+		],
+		"emission": [
+			1.0,
+			1.0,
+			1.0
+		],
+		"metallic": 1.0,
+		"pickmode": true,
+		"roughness": 1.0,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"texture0": "./Textures/slidingdoor02_diffuse.dds",
+		"texture1": "./Textures/slidingdoor02_normal.dds",
+		"texture2": "./Textures/slidingdoor02_metal-slidingdoor02_roughness.dds",
+		"texture4": "./Textures/slidingdoor02_emisson.dds"
+	}
+}

@@ -21,24 +21,24 @@
 					{
 						"base":
 						{
-							"fragment": "Shaders/SpecularGloss_Masked.frag.spv",
-							"transparency": "Shaders/SpecularGloss_Masked.frag.spv"
+							"fragment": "Shaders/PBR/SpecularGloss_Masked.frag",
+							"transparency": "Shaders/PBR/SpecularGloss_Masked.frag"
 						}
 					},
 					"triangles":
 					{
 						"base":
 						{
-							"fragment": "Shaders/SpecularGloss_Masked.frag.spv",
-							"transparency": "Shaders/SpecularGloss_Masked.frag.spv"
+							"fragment": "Shaders/PBR/SpecularGloss_Masked.frag",
+							"transparency": "Shaders/PBR/SpecularGloss_Masked.frag"
 						}
 					},
 					"quads":
 					{
 						"base":
 						{
-							"fragment": "Shaders/SpecularGloss_Masked.frag.spv",
-							"transparency": "Shaders/SpecularGloss_Masked.frag.spv"
+							"fragment": "Shaders/PBR/SpecularGloss_Masked.frag",
+							"transparency": "Shaders/PBR/SpecularGloss_Masked.frag"
 						}
 					}					
 				},
@@ -48,24 +48,24 @@
 					{
 						"base":
 						{
-							"fragment": "Shaders/SpecularGloss.frag.spv",
-							"transparency": "Shaders/SpecularGloss.frag.spv"
+							"fragment": "Shaders/PBR/SpecularGloss.frag",
+							"transparency": "Shaders/PBR/SpecularGloss.frag"
 						}
 					},		
 					"triangles":
 					{
 						"base":
 						{
-							"fragment": "Shaders/SpecularGloss.frag.spv",
-							"transparency": "Shaders/SpecularGloss.frag.spv"
+							"fragment": "Shaders/PBR/SpecularGloss.frag",
+							"transparency": "Shaders/PBR/SpecularGloss.frag"
 						}
 					},
 					"quads":
 					{
 						"base":
 						{
-							"fragment": "Shaders/SpecularGloss.frag.spv",
-							"transparency": "Shaders/SpecularGloss.frag.spv"
+							"fragment": "Shaders/PBR/SpecularGloss.frag",
+							"transparency": "Shaders/PBR/SpecularGloss.frag"
 						}
 					}
 				}

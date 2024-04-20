@@ -9,7 +9,7 @@
                 {
                     "float32":
                     {
-                        "fragment": "Shaders/Outline.frag.spv"
+                        "fragment": "Shaders/PostEffects/Outline.frag"
                     }
                 }
             }

@@ -15,147 +15,96 @@
 		{
 			"float":
 			{
-				"mask":
-				{
-					"default":
-					{
-						"base":
-						{
-							"vertex": "Shaders/PBR.vert.spv",
-							"fragment": "Shaders/PBR_Masked.frag.spv",
-							"animation": "Shaders/PBR_Animated.vert.spv",
-							"transparency": "Shaders/PBR_Masked.frag.spv"							
-						},
-						"depthPass":
-						{
-							"vertex": "Shaders/DepthPass_Masked.vert.spv",
-							"fragment": "Shaders/DepthPass_Masked.frag.spv"
-						},
-						"shadow":
-						{
-							"vertex": "Shaders/DepthPass_Masked.vert.spv",
-							"fragment": "Shaders/DepthPass_Masked.frag.spv"
-						}
-					},
-					"triangles":
-					{
-						"base":
-						{
-							"vertex": "Shaders/PBR_Tess.vert.spv",
-							"tessellationControl": "Shaders/Tris.tesc.spv",
-							"tessellationEvaluation": "Shaders/Tris.tese.spv",
-							"fragment": "Shaders/PBR_Masked.frag.spv",
-							"transparency": "Shaders/PBR_Masked.frag.spv"
-						},
-						"depthPass":
-						{
-							"vertex": "Shaders/DepthPass_Tess_Masked.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Tris_Masked.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Tris_Masked.tese.spv",
-							"fragment": "Shaders/DepthPass_Masked.frag.spv"
-						},
-						"shadow":
-						{
-							"vertex": "Shaders/DepthPass_Tess_Masked.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Tris_Masked.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Tris_Masked.tese.spv",
-							"fragment": "Shaders/DepthPass_Masked.frag.spv"
-						}
-					},
-					"quads":
-					{
-						"base":
-						{
-							"vertex": "Shaders/PBR_Tess.vert.spv",
-							"tessellationControl": "Shaders/Quads.tesc.spv",
-							"tessellationEvaluation": "Shaders/Quads.tese.spv",
-							"fragment": "Shaders/PBR_Masked.frag.spv",
-							"transparency": "Shaders/PBR_Masked.frag.spv"
-						},
-						"depthPass":
-						{
-							"vertex": "Shaders/DepthPass_Tess_Masked.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Quads_Masked.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Quads_Masked.tese.spv",
-							"fragment": "Shaders/DepthPass_Masked.frag.spv"
-						},
-						"shadow":
-						{
-							"vertex": "Shaders/DepthPass_Tess_Masked.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Quads_Masked.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Quads_Masked.tese.spv",
-							"fragment": "Shaders/DepthPass_Masked.frag.spv"
-						}
-					}					
-				},
 				"opaque":
 				{
 					"default":
 					{
 						"base":
 						{
-							"vertex": "Shaders/PBR.vert.spv",
-							"fragment": "Shaders/PBR.frag.spv",
-							"animation": "Shaders/PBR_Animated.vert.spv",
-							"transparency": "Shaders/PBR.frag.spv"
+							"vertex": "Shaders/PBR/PBR.vert",
+							"fragment": "Shaders/PBR/PBR.frag",
+							"animation": "Shaders/PBR/PBR_Animated.vert"					
 						},
 						"depthPass":
 						{
-							"vertex": "Shaders/DepthPass.vert.spv",
-							"animation": "Shaders/DepthPass_Animated.vert.spv"
+							"vertex": "Shaders/DepthPass/DepthPass.vert",
+							"animation": "Shaders/DepthPass/DepthPass_Animated.vert"
 						},
 						"shadow":
 						{
-							"vertex": "Shaders/Shadow.vert.spv",
-							"animation": "Shaders/DepthPass_Animated.vert.spv",
-							"fragment222": "Shaders/Shadow.frag.spv"
+							"vertex": "Shaders/Shadow/Shadow.vert",
+							"animation": "Shaders/Shadow/Shadow_Animated.vert"
 						}
-					},		
+					},
 					"triangles":
 					{
 						"base":
 						{
-							"vertex": "Shaders/PBR_Tess.vert.spv",
-							"animation": "Shaders/PBR_Tess_Animated.vert.spv",
-							"tessellationControl": "Shaders/Tris.tesc.spv",
-							"tessellationEvaluation": "Shaders/Tris.tese.spv",
-							"fragment": "Shaders/PBR.frag.spv",
-							"transparency": "Shaders/PBR.frag.spv"
+							"vertex": "Shaders/PBR/PBR_Tess.vert",
+							"animation": "Shaders/PBR/PBR_Tess_Animated.vert",
+							"tessellationControl": "Shaders/Tessellation/Tris.tesc",
+							"tessellationEvaluation": "Shaders/Tessellation/Tris.tese",
+							"fragment": "Shaders/PBR/PBR.frag",
+							"transparency": "Shaders/PBR/PBR.frag"
 						},
 						"depthPass":
 						{
-							"vertex": "Shaders/DepthPass_Tess.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Tris.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Tris.tese.spv"
+							"vertex": "Shaders/DepthPass//DepthPass_Tess.vert",
+							"tessellationControl": "Shaders/DepthPass/DepthPass_Tris.tesc",
+							"tessellationEvaluation": "Shaders/DepthPass/DepthPass_Tris.tese"
 						},
 						"shadow":
 						{
-							"vertex": "Shaders/DepthPass_Tess.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Tris.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Tris.tese.spv"
+							"vertex": "Shaders/DepthPass/DepthPass_Tess.vert",
+							"tessellationControl": "Shaders/DepthPass/DepthPass_Tris.tesc",
+							"tessellationEvaluation": "Shaders/DepthPass/DepthPass_Tris.tese"
 						}
 					},
 					"quads":
 					{
 						"base":
 						{
-							"vertex": "Shaders/PBR_Tess.vert.spv",
-							"tessellationControl": "Shaders/Quads.tesc.spv",
-							"tessellationEvaluation": "Shaders/Quads.tese.spv",
-							"fragment": "Shaders/PBR.frag.spv",
-							"transparency": "Shaders/PBR.frag.spv"
+							"vertex": "Shaders/PBR/PBR_Tess.vert",
+							"tessellationControl": "Shaders/Tessellation/Quads.tesc",
+							"tessellationEvaluation": "Shaders/Tessellation/Quads.tese",
+							"fragment": "Shaders/PBR/PBR.frag",
+							"transparency": "Shaders/PBR/PBR.frag"
 						},
 						"shadow":
 						{
-							"vertex": "Shaders/DepthPass_Tess.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Quads.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Quads.tese.spv"
+							"vertex": "Shaders/DepthPass/DepthPass_Tess.vert",
+							"tessellationControl": "Shaders/DepthPass/DepthPass_Quads.tesc",
+							"tessellationEvaluation": "Shaders/DepthPass/DepthPass_Quads.tese"
 						},
 						"depthPass":
 						{
-							"vertex": "Shaders/DepthPass_Tess.vert.spv",
-							"tessellationControl": "Shaders/DepthPass_Quads.tesc.spv",
-							"tessellationEvaluation": "Shaders/DepthPass_Quads.tese.spv"
+							"vertex": "Shaders/DepthPass/DepthPass_Tess.vert",
+							"tessellationControl": "Shaders/DepthPass/DepthPass_Quads.tesc",
+							"tessellationEvaluation": "Shaders/DepthPass/DepthPass_Quads.tese"
+						}
+					}
+				},
+				"mask":
+				{
+					"default":
+					{
+						"base":
+						{
+							"vertex": "Shaders/PBR/PBR.vert",
+							"fragment": "Shaders/PBR/PBR_Masked.frag",
+							"animation": "Shaders/PBR/PBR_Animated.vert"					
+						},
+						"depthPass":
+						{
+							"fragment": "Shaders/DepthPass/DepthPass_Masked.frag",
+							"vertex": "Shaders/DepthPass/DepthPass_Masked.vert",
+							"animation": "Shaders/DepthPass/DepthPass_Masked_Animated.vert"
+						},
+						"shadow":
+						{
+							"fragment": "Shaders/Shadow/Shadow.frag",
+							"vertex": "Shaders/Shadow/Shadow_Masked.vert",
+							"animation": "Shaders/Shadow/Shadow_Animated_Masked.vert"
 						}
 					}
 				}

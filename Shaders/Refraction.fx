@@ -10,10 +10,10 @@
                 {
                     "float32":
                     {
-                        "fragment": "Shaders/Refraction.frag.spv"
+                        "fragment": "Shaders/PostEffects/Refraction.frag"
                     }
                 }
-            }              
+            }
         ]
     }
 }

@@ -5,13 +5,19 @@
         [
             {
                 "size": [0.5, 0.5],
-                "format": 97,
-                "miplevels": 3
+                "format": 97
             },
             {
-                "size": [0.5, 0.5],
-                "format": 97,
-                "miplevels": 3
+                "size": [0.25, 0.25],
+                "format": 97
+            },
+            {
+                "size": [0.125, 0.125] ,
+                "format" : 97
+            },
+            {
+                "size": [0.0625, 0.0625] ,
+                "format" : 97
             }
         ],
         "subpasses":
@@ -19,86 +25,54 @@
             {
                 "colorattachments": [0],
                 "samplers": [ "PREVPASS" ],
-                "mipLevel": 0,
                 "shader":
                 {
                     "float32":
                     {
-                        "fragment": "Shaders/BloomBlurX.frag.spv"
+                        "fragment": "Shaders/PostEffects/BloomBlurX.frag"
                     }
                 }
             },
             {
                 "colorattachments": [1],
-                "samplers": [0],
-                "mipLevel": 0,
+                "samplers": [ 0 ],
                 "shader":
                 {
                     "float32":
                     {
-                        "fragment": "Shaders/BloomBlurY.frag.spv"
-                    }
-                }
-            },   
-            
-            {
-                "colorattachments": [0],
-                "samplers": [1],
-                "mipLevel": 1,
-                "shader":
-                {
-                    "float32":
-                    {
-                        "fragment": "Shaders/BloomBlurX.frag.spv"
+                        "fragment": "Shaders/PostEffects/BloomBlurY.frag"
                     }
                 }
             },
             {
-                "colorattachments": [1],
-                "samplers": [0],
-                "mipLevel": 1,
-                "shader":
+                "colorattachments": [2] ,
+                "samplers" : [ 1 ],
+                "shader" :
                 {
                     "float32":
                     {
-                        "fragment": "Shaders/BloomBlurY.frag.spv"
-                    }
-                }
-            },             
-
-            {
-                "colorAttachments": [0],
-                "samplers": [1],
-                "mipLevel": 2,
-                "shader":
-                {
-                    "float32":
-                    {
-                        "fragment": "Shaders/BloomBlurX.frag.spv"
+                        "fragment": "Shaders/PostEffects/BloomBlurX.frag"
                     }
                 }
             },
             {
-                "colorattachments": [1],
-                "samplers": [0],
-                "mipLevel": 2,
-                "shader":
+                "colorattachments": [3] ,
+                "samplers" : [2],
+                "shader" :
                 {
                     "float32":
                     {
-                        "fragment": "Shaders/BloomBlurY.frag.spv"
+                        "fragment": "Shaders/PostEffects/BloomBlurY.frag"
                     }
                 }
-            },  
-
+            },
             {
-                "samplers": ["PREVPASS", 1],
-                "mipLevel": 0,
+                "samplers": ["PREVPASS", 3],
                 "shader":
                 {
                     "float32":
                     {
-                        "fragment": "Shaders/BloomResolve.frag.spv"
+                        "fragment": "Shaders/PostEffects/BloomResolve.frag"
                     }
                 }
             }                      

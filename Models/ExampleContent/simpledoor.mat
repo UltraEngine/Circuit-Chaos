@@ -1,0 +1,16 @@
+{
+	"material": {
+		"displacement": [
+			0.10000000149011612,
+			0.0
+		],
+		"metallic": 1.0,
+		"pickmode": true,
+		"roughness": 1.0,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"texture0": "./Textures/simpledoor_diffuse.dds",
+		"texture1": "./Textures/simpledoor_normal.dds",
+		"texture2": "./Textures/simpledoor_metal-simpledoor_roughness.dds"
+	}
+}
