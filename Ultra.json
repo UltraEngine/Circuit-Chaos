@@ -8,7 +8,7 @@
 				[
 					{
 						"commandline": "+map \"$MAPFILE\"",
-						"path": "Circuit-Chaos.exe"
+						"path": "XFORM.exe"
 					}
 				],
 				"name": "Run"
@@ -18,20 +18,16 @@
 				[
 					{
 						"commandline": "+map \"$MAPFILE\"",
-						"path": "Circuit-Chaos_d.exe"
+						"path": "XFORM_d.exe"
 					}
 				],
 				"name": "Debug"
 			}
 		],
 		"currentpath": "Materials/Developer",
-		"name": "Circuit-Chaos",
+		"name": "XFORM",
 		"recentfiles":
 		[
-			"D:/Projects/Circuit-Chaos/Maps/reference_size.ultra",
-			"D:/Projects/Circuit-Chaos/Maps/viewmodeltest.ultra",
-			"D:/Projects/Circuit-Chaos/Maps/start.ultra",
-			"D:/Projects/Circuit-Chaos/Maps/devtest.ultra"
 		],
 		"templates":
 		[
