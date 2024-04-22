@@ -1,5 +1,19 @@
 # This .gitignore is optimized for Ultra Engine Projects and is intended to be copied and modified to fit the needs of the project of it's apart of.
 
+# Visual Studio Intermediate Files
+.vs/**
+x64/**
+*.exp
+*.pdb
+*.BuildCppClean.log
+**.recipe
+**.FileListAbsolute.txt
+*.ilk
+*.log
+*.tlog
+*.idb
+*.vcxproj.user
+
 # Backup folder:
 backup/**
 
