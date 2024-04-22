@@ -24,14 +24,14 @@
 				"name": "Debug"
 			}
 		],
-		"currentpath": "Materials/Developer",
+		"currentpath": "Models/ExampleContent",
 		"name": "XFORM",
 		"recentfiles":
-		[
-		],
+		{}
+,
 		"templates":
 		[
-			"Lua",
+			"C++",
 			"Common"
 		],
 		"validationLayers":
