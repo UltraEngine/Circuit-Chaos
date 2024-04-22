@@ -24,11 +24,12 @@
 				"name": "Debug"
 			}
 		],
-		"currentpath": "Models/ExampleContent",
+		"currentpath": "Materials/Developer",
 		"name": "XFORM",
 		"recentfiles":
-		{}
-,
+		[
+			"D:/Projects/XFORM/Maps/xform.ultra"
+		],
 		"templates":
 		[
 			"C++",
