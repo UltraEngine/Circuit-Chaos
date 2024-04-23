@@ -15,7 +15,7 @@
 *.wav binary
 *.mp3 binary
 *.ogg binary
-*.ultra text
+*.ultra binary
 
 *.mdl binary
 *.phys binary

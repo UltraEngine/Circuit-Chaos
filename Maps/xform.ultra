@@ -1,5 +1,8 @@
 {
 	"scene": {
+		"colliders": [
+			{}
+		],
 		"entities": [
 			{
 				"brush": {
@@ -14998,6 +15001,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -15175,6 +15179,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -15352,6 +15357,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -15529,6 +15535,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -15706,6 +15713,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -15883,6 +15891,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -16060,6 +16069,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -16237,6 +16247,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -16414,6 +16425,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -16591,6 +16603,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -16783,6 +16796,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -16975,6 +16989,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -17167,6 +17182,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -17344,6 +17360,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -17521,6 +17538,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -17713,6 +17731,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -17905,6 +17924,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -18082,6 +18102,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -18259,6 +18280,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -18436,6 +18458,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -18628,6 +18651,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -18805,6 +18829,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -18982,6 +19007,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -19159,6 +19185,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -19336,6 +19363,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -19513,6 +19541,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -19690,6 +19719,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -19867,6 +19897,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -20044,6 +20075,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -20236,6 +20268,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -20413,6 +20446,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -20605,6 +20639,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -20782,6 +20817,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -20959,6 +20995,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -21151,6 +21188,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -21328,6 +21366,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -21505,6 +21544,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -21682,6 +21722,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -21859,6 +21900,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -22004,18 +22046,18 @@
 				},
 				{
 					"cameraposition": [
-						-1.75566,
-						-9.15677e-07,
-						-5.1209
+						4.36963,
+						-1.53012e-06,
+						-8.55712
 					],
 					"camerarotation": [
 						90,
 						0,
 						0
 					],
-					"gridsize": -1,
+					"gridsize": 0,
 					"view": 3,
-					"zoom": 172.8
+					"zoom": 19.3807
 				},
 				{
 					"cameraposition": [
