@@ -1,5 +1,8 @@
 {
 	"scene": {
+		"colliders": [
+			{}
+		],
 		"entities": [
 			{
 				"brush": {
@@ -54727,6 +54730,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -54764,6 +54768,7 @@
 				"castshadows": true,
 				"collider": 1,
 				"collisiontype": 1,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -54945,6 +54950,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -55122,6 +55128,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -55303,6 +55310,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -55339,6 +55347,7 @@
 			{
 				"castshadows": true,
 				"collisiontype": 1,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -55520,6 +55529,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -55697,6 +55707,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -55874,6 +55885,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -56051,6 +56063,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -56232,6 +56245,7 @@
 				},
 				"castshadows": true,
 				"collisiontype": 2,
+				"extras": {},
 				"friction": [
 					0.5,
 					0.8999999761581421
@@ -56367,8 +56381,8 @@
 						-16.7825
 					],
 					"camerarotation": [
-						38.0302,
-						3693.87,
+						-27.0792,
+						3597.75,
 						0
 					],
 					"gridsize": 0,
@@ -56388,7 +56402,7 @@
 					],
 					"gridsize": 0,
 					"view": 3,
-					"zoom": 33.4898
+					"zoom": 100
 				},
 				{
 					"cameraposition": [
