@@ -1,0 +1,17 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"displacement": [
+			0.05000000074505806,
+			-0.02500000037252903
+		],
+		"metallic": 0.0,
+		"pickmode": true,
+		"roughness": 0.10000000149011612,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"texture0": "./office_woodfloor.dds",
+		"texture1": "./office_woodfloor_normal.dds"
+	}
+}
