@@ -56,7 +56,7 @@ void main()
     
     if (material.textureHandle[TEXTURE_DIFFUSE] != uvec2(0)) baseColor *= texture(sampler2D(material.textureHandle[TEXTURE_DIFFUSE]), texcoords.xy);
 #ifdef ALPHA_DISCARD
-    if (baseColor.a < 0.5f) discard;
+    if (baseColor.a < ExtractMaterialAlphaCutoff(material)) discard;
 #endif
 
     materialInfo.baseColor = baseColor.rgb;
@@ -79,7 +79,7 @@ void main()
         n = tangent.xyz * n.x + bitangent * n.y + normal * n.z;
 	}
     n = normalize(n);
-
+    
 //outColor[0].rgb = n * 0.5 + 0.5;
 //return;
 
@@ -99,16 +99,14 @@ void main()
     
     materialInfo.metallic = 0;
 	materialInfo.f0 = material.speculargloss.rgb;
-    materialInfo.perceptualRoughness = material.metalnessRoughness.g;
+    materialInfo.perceptualRoughness = 1.0f - material.speculargloss.a;
     if (material.textureHandle[TEXTURE_METALLICROUGHNESS] != uvec2(0))
     {
         vec4 sgSample = (texture(sampler2D(material.textureHandle[TEXTURE_METALLICROUGHNESS]), texcoords.xy));
         materialInfo.perceptualRoughness *= 1.0f - sgSample.a; // glossiness to roughness
         materialInfo.f0 *= sgSample.rgb; // specular
     }
-
-    //This is already flipped in the engine, no need to do it here
-    //materialInfo.perceptualRoughness = 1.0f - materialInfo.perceptualRoughness; // 1 - glossiness
+    
     materialInfo.c_diff = materialInfo.baseColor.rgb * (1.0f - max(max(materialInfo.f0.r, materialInfo.f0.g), materialInfo.f0.b));
     
 #endif

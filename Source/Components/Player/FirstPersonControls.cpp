@@ -18,7 +18,7 @@ void FirstPersonControls::Start()
 	camera = CreateCamera(entity->GetWorld());
 	camera->SetPosition(0, eyeheight, 0);
 	camera->SetRotation(0, 0, 0);
-	camera->SetFov(70);
+	camera->SetFov(fov);
 	currentcameraposition = camera->GetPosition(true);
 	freelookrotation = entity->GetRotation(true);
 }
@@ -32,6 +32,7 @@ void FirstPersonControls::Update()
 	auto window = ActiveWindow();
 	if (window)
 	{
+		/*
 		if (!freelookstarted)
 		{
 			freelookstarted = true;
@@ -50,6 +51,41 @@ void FirstPersonControls::Update()
 			camera->SetRotation(freelookrotation, true);
 		}
 		freelookmousepos = newmousepos;
+		*/
+
+		auto cx = Round((float)window->GetFramebuffer()->GetSize().x / 2);
+		auto cy = Round((float)window->GetFramebuffer()->GetSize().y / 2);
+		auto mpos = window->GetMousePosition();
+		window->SetMousePosition(cx, cy);
+		auto centerpos = window->GetMousePosition();
+
+		if (freelookstarted)
+		{
+			float looksmoothing = mousesmoothing; //0.5f;
+			float lookspeed = mouselookspeed / 10.0f;
+
+			if (looksmoothing > 0.00f)
+			{
+				mpos.x = mpos.x * looksmoothing + freelookmousepos.x * (1 - looksmoothing);
+				mpos.y = mpos.y * looksmoothing + freelookmousepos.y * (1 - looksmoothing);
+			}
+
+			auto dx = (mpos.x - centerpos.x) * lookspeed;
+			auto dy = (mpos.y - centerpos.y) * lookspeed;
+
+			freelookrotation.x = freelookrotation.x + dy;
+			freelookrotation.y = freelookrotation.y + dx;
+			camera->SetRotation(freelookrotation, true);
+			freelookmousepos = Vec3(mpos.x, mpos.y);
+		}
+		else
+		{
+			freelookstarted = true;
+			freelookrotation = camera->GetRotation(true);
+			freelookmousepos = Vec3(window->GetMousePosition().x, window->GetMousePosition().y);
+			window->SetCursor(CURSOR_NONE);
+		}
+
 		float speed = movespeed;// / 60.0f;
 		bool jumpkey = window->KeyHit(KEY_SPACE);
 		if (entity->GetAirborne())
@@ -101,6 +137,9 @@ shared_ptr<Component> FirstPersonControls::Copy()
 
 bool FirstPersonControls::Load(table& properties, shared_ptr<Stream> binstream, shared_ptr<Map> scene, const LoadFlags flags)
 {
+	if (properties["fov"].is_number()) fov = properties["fov"];
+	if (properties["eyeheight"].is_number()) eyeheight = properties["eyeheight"];
+	if (properties["mouselookspeed"].is_number()) mouselookspeed = properties["mouselookspeed"];
     if (properties["mousesmoothing"].is_number()) mousesmoothing = properties["mousesmoothing"];
     if (properties["mouselookspeed"].is_number()) mouselookspeed = properties["mouselookspeed"];
     if (properties["movespeed"].is_number()) movespeed = properties["movespeed"];
@@ -109,6 +148,8 @@ bool FirstPersonControls::Load(table& properties, shared_ptr<Stream> binstream, 
 
 bool FirstPersonControls::Save(table& properties, shared_ptr<Stream> binstream, shared_ptr<Map> scene, const SaveFlags flags)
 {
+	properties["fov"] = fov;
+	properties["eyeheight"] = eyeheight;
 	properties["mousesmoothing"] = mousesmoothing;
 	properties["mouselookspeed"] = mouselookspeed;
 	properties["movespeed"] = movespeed;

@@ -103,4 +103,9 @@ vec2 ExtractMaterialDisplacement(in Material material)
 	return vec2(0.0f, 0.0f);
 }
 
+float ExtractMaterialAlphaCutoff(in Material material)
+{
+	return material.displacement.z;
+}
+
 #endif

@@ -4,6 +4,16 @@
         "properties":
         [
             {
+                "name": "fov",
+                "label": "Fov",
+                "value": 70.0
+            },
+            {
+                "name": "eyeheight",
+                "label": "Eye Height",
+                "value": 1.7
+            },
+            {
                 "name": "mousesmoothing",
                 "label": "Mouse smoothing",
                 "value": 0.0

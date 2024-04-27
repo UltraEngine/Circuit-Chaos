@@ -11,9 +11,11 @@ class FirstPersonControls : public Component
 	Vec2 lookchange;
 	shared_ptr<Camera> camera;
 	Vec3 currentcameraposition;
+
+public:
+	float fov = 70.0f;
 	float eyeheight = 1.7f;
 	float croucheyeheight = 1.0f;
-public:
 	float mousesmoothing = 0.0f;
 	float mouselookspeed = 1.0f;
 	float movespeed = 4.0f;

@@ -17,5 +17,7 @@ void main()
 	vec4 color = color * material.diffuseColor;
 	uvec2 textureID = material.textureHandle[0];
 	if (textureID != uvec2(0)) color *= texture(sampler2D(textureID), texcoords.xy);
-	if (color.a < 0.5f) discard;
+#ifdef ALPHA_DISCARD
+    if (baseColor.a < ExtractMaterialAlphaCutoff(material)) discard;
+#endif
 }

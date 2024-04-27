@@ -1,0 +1,22 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"displacement": [
+			0.10000000149011612,
+			0.0
+		],
+		"glossiness": 1.0,
+		"metallic": 0.0,
+		"pickmode": true,
+		"roughness": 0.5,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"specular": [
+			1.0,
+			1.0,
+			1.0
+		],
+		"texture0": "./door_single.png"
+	}
+}
