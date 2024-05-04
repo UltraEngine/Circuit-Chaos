@@ -1,0 +1,30 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"color": [
+			0.7843137979507446,
+			0.7843137979507446,
+			0.7843137979507446,
+			1.0
+		],
+		"displacement": [
+			0.05000000074505806,
+			-0.02500000037252903
+		],
+		"glossiness": 1.0,
+		"metallic": 0.0,
+		"pickmode": true,
+		"roughness": 1.0,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"specular": [
+			1.0,
+			1.0,
+			1.0
+		],
+		"texture0": "./office_plasterwall.dds",
+		"texture1": "./office_plasterwall_normal.dds",
+		"texture2": "./office_plasterwall_MetallicRoughness.dds"
+	}
+}

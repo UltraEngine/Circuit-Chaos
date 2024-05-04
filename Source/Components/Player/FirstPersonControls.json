@@ -27,6 +27,16 @@
                 "name": "movespeed",
                 "label": "Move speed",
                 "value": 4.0
+            },
+            {
+                "name": "jumpforce",
+                "label": "Jump Force",
+                "value": 8.0
+            },
+            {
+                "name": "jumplunge",
+                "label": "Jump Lunge",
+                "value": 1.5
             }
         ]
     }

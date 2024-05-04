@@ -24,12 +24,13 @@
 				"name": "Debug"
 			}
 		],
-		"currentpath": "Models/Doors",
+		"currentpath": "Materials/Test",
 		"name": "XFORM",
 		"recentfiles":
 		[
-			"D:/Projects/XFORM/Maps/xform.ultra",
 			"D:/Projects/XFORM/Maps/testroom.ultra",
+			"D:/Projects/XFORM/Maps/xform.ultra",
+			"D:/Projects/XFORM/Maps/Prefabs/player.pfb",
 			"D:/Projects/XFORM/Maps/reference_size.ultra"
 		],
 		"templates":

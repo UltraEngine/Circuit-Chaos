@@ -100,6 +100,7 @@ void main()
     materialInfo.metallic = 0;
 	materialInfo.f0 = material.speculargloss.rgb;
     materialInfo.perceptualRoughness = 1.0f - material.speculargloss.a;
+
     if (material.textureHandle[TEXTURE_METALLICROUGHNESS] != uvec2(0))
     {
         vec4 sgSample = (texture(sampler2D(material.textureHandle[TEXTURE_METALLICROUGHNESS]), texcoords.xy));
@@ -107,6 +108,12 @@ void main()
         materialInfo.f0 *= sgSample.rgb; // specular
     }
     
+    if (!gl_FrontFacing)
+    {
+        materialInfo.perceptualRoughness = 1.0f;
+        //materialInfo.f0 = vec3(0.0);
+    }
+
     materialInfo.c_diff = materialInfo.baseColor.rgb * (1.0f - max(max(materialInfo.f0.r, materialInfo.f0.g), materialInfo.f0.b));
     
 #endif

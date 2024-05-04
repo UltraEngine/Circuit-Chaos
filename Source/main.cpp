@@ -26,7 +26,20 @@ int main(int argc, const char* argv[])
     auto displays = GetDisplays();
 
     //Create a window
-    auto window = CreateWindow("Ultra Engine", 0, 0, 1280 * displays[0]->scale, 720 * displays[0]->scale, displays[0], WINDOW_CENTER | WINDOW_TITLEBAR);
+    iVec2 windowsize = iVec2(1280, 720);
+    WindowStyles windowstyle = WINDOW_CENTER | WINDOW_TITLEBAR;
+    if (cl["screenwidth"].is_number()) windowsize.x = cl["screenwidth"];
+    if (cl["screenheight"].is_number()) windowsize.y = cl["screenheight"];
+    if (cl["fullscreen"].is_boolean())
+    {
+        if (cl["fullscreen"])
+        {
+            windowsize.x = displays[0]->size.x;
+            windowsize.y = displays[0]->size.y;
+            windowstyle = WINDOW_FULLSCREEN;
+        }
+    }
+    auto window = CreateWindow("Ultra Engine", 0, 0, windowsize.x * displays[0]->scale, windowsize.y * displays[0]->scale, displays[0], windowstyle);
 
     //Create a framebuffer
     auto framebuffer = CreateFramebuffer(window);

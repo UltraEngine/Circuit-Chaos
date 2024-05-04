@@ -44,7 +44,7 @@ void ExtractLightInfo(in uint lightID, out uint shadowmaplayer, out int shadowca
 	shadowkernel = int(lightinfo[3][2]);
 	lightflags = uint(lightinfo[3][3]);
 #else
-void ExtractLightInfo(in uint lightID, out uint shadowmaplayer, out int shadowcachemapID, out vec2 range, out vec2 coneangles, out vec2 shadowrange, out uint lightflags, out int shadowkernel)
+void ExtractLightInfo(in uint lightID, out uint shadowmaplayer, out int shadowcachemapID, out vec2 range, out vec2 coneangles, out vec2 shadowrange, out uint lightflags, out int shadowkernel, out float cascadedistance)
 {
 	const mat4 lightinfo = entityMatrix[lightID + LIGHT_INFO_OFFSET];
 	shadowmaplayer = floatBitsToUint(lightinfo[2][0]);
@@ -54,6 +54,7 @@ void ExtractLightInfo(in uint lightID, out uint shadowmaplayer, out int shadowca
 	range = lightinfo[0].xy;
     coneangles = lightinfo[0].zw;
 	shadowrange = lightinfo[2].zw;
+	cascadedistance = lightinfo[2].y;
 }
 
 void ExtractLightInfo(in uint lightID, out vec2 coneangles, out int shadowkernel, out uint shadowmaplayer)

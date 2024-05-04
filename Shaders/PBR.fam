@@ -22,18 +22,15 @@
 						"base":
 						{
 							"vertex": "Shaders/PBR/PBR.vert",
+							"meshlayer": "Shaders/MeshLayer/meshlayer.vert",
 							"fragment": "Shaders/PBR/PBR.frag",
 							"animation": "Shaders/PBR/PBR_Animated.vert"					
 						},
 						"depthPass":
 						{
 							"vertex": "Shaders/DepthPass/DepthPass.vert",
+							"meshlayer": "Shaders/MeshLayer/DepthPass.vert",
 							"animation": "Shaders/DepthPass/DepthPass_Animated.vert"
-						},
-						"shadow":
-						{
-							"vertex": "Shaders/Shadow/Shadow.vert",
-							"animation": "Shaders/Shadow/Shadow_Animated.vert"
 						}
 					},
 					"triangles":
@@ -52,12 +49,6 @@
 							"vertex": "Shaders/DepthPass//DepthPass_Tess.vert",
 							"tessellationControl": "Shaders/DepthPass/DepthPass_Tris.tesc",
 							"tessellationEvaluation": "Shaders/DepthPass/DepthPass_Tris.tese"
-						},
-						"shadow":
-						{
-							"vertex": "Shaders/DepthPass/DepthPass_Tess.vert",
-							"tessellationControl": "Shaders/DepthPass/DepthPass_Tris.tesc",
-							"tessellationEvaluation": "Shaders/DepthPass/DepthPass_Tris.tese"
 						}
 					},
 					"quads":
@@ -69,12 +60,6 @@
 							"tessellationEvaluation": "Shaders/Tessellation/Quads.tese",
 							"fragment": "Shaders/PBR/PBR.frag",
 							"transparency": "Shaders/PBR/PBR.frag"
-						},
-						"shadow":
-						{
-							"vertex": "Shaders/DepthPass/DepthPass_Tess.vert",
-							"tessellationControl": "Shaders/DepthPass/DepthPass_Quads.tesc",
-							"tessellationEvaluation": "Shaders/DepthPass/DepthPass_Quads.tese"
 						},
 						"depthPass":
 						{
@@ -91,6 +76,7 @@
 						"base":
 						{
 							"vertex": "Shaders/PBR/PBR.vert",
+							"meshlayer": "Shaders/MeshLayer/MeshLayer.vert",
 							"fragment": "Shaders/PBR/PBR_Masked.frag",
 							"animation": "Shaders/PBR/PBR_Animated.vert"					
 						},
@@ -98,13 +84,8 @@
 						{
 							"fragment": "Shaders/DepthPass/DepthPass_Masked.frag",
 							"vertex": "Shaders/DepthPass/DepthPass_Masked.vert",
+							"meshlayer": "Shaders/MeshLayer/DepthPass_Masked.vert",
 							"animation": "Shaders/DepthPass/DepthPass_Masked_Animated.vert"
-						},
-						"shadow":
-						{
-							"fragment": "Shaders/Shadow/Shadow.frag",
-							"vertex": "Shaders/Shadow/Shadow_Masked.vert",
-							"animation": "Shaders/Shadow/Shadow_Animated_Masked.vert"
 						}
 					}
 				}

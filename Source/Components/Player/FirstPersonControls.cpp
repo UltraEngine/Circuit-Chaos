@@ -74,6 +74,7 @@ void FirstPersonControls::Update()
 			auto dy = (mpos.y - centerpos.y) * lookspeed;
 
 			freelookrotation.x = freelookrotation.x + dy;
+			freelookrotation.x = Clamp(freelookrotation.x, -90.0f, 90.0f);
 			freelookrotation.y = freelookrotation.y + dx;
 			camera->SetRotation(freelookrotation, true);
 			freelookmousepos = Vec3(mpos.x, mpos.y);
@@ -122,9 +123,10 @@ void FirstPersonControls::Update()
 	entity->SetInput(camera->rotation.y, movement.z, movement.x, jump, crouch);
 		
 	float eye = eyeheight;
+	if (crouch) eye = croucheyeheight;
 	float y = TransformPoint(currentcameraposition, nullptr, entity).y;
 	float h = eye;
-	if (y < eye) h = Mix(y, eye, 0.5f);
+	if (y < eye || eye != eyeheight) h = Mix(y, eye, 0.25f);
 	currentcameraposition = TransformPoint(0, h, 0, entity, nullptr);
 	camera->SetPosition(currentcameraposition, true);
 }
@@ -143,6 +145,8 @@ bool FirstPersonControls::Load(table& properties, shared_ptr<Stream> binstream, 
     if (properties["mousesmoothing"].is_number()) mousesmoothing = properties["mousesmoothing"];
     if (properties["mouselookspeed"].is_number()) mouselookspeed = properties["mouselookspeed"];
     if (properties["movespeed"].is_number()) movespeed = properties["movespeed"];
+	if (properties["jumpforce"].is_number()) jumpforce = properties["jumpforce"];
+	if (properties["jumplunge"].is_number()) jumplunge = properties["jumplunge"];
 	return true;
 }
 
@@ -153,5 +157,7 @@ bool FirstPersonControls::Save(table& properties, shared_ptr<Stream> binstream, 
 	properties["mousesmoothing"] = mousesmoothing;
 	properties["mouselookspeed"] = mouselookspeed;
 	properties["movespeed"] = movespeed;
+	properties["jumpforce"] = jumpforce;
+	properties["jumplunge"] = jumplunge;
 	return true;
 }

@@ -1,0 +1,12 @@
+{
+	"material": {
+		"metallic": 1.0,
+		"tessellation": true,
+		"texture0": "./concrete_layers_diff.dds",
+		"texture1": "./concrete_layers_normal.dds",
+		"texture2": "./concrete_layers_OcclusionMetallicRoughness.dds",
+		"texture3": "./concrete_layers_disp.dds",
+		"texture4": null,
+		"texture5": "./concrete_layers_OcclusionMetallicRoughness.dds"
+	}
+}

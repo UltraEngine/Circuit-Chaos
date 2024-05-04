@@ -27,6 +27,7 @@ int RenderLight(in uint lightIndex, in Material material, in MaterialInfo materi
 	uint shadowMapLayer;
 	float attenuation = 1.0f;
 	int shadowkernel;
+	float cascadedistance;
 	dFloat d;
 #ifdef DOUBLE_FLOAT
 	dvec2 lightrange, coneangles, shadowrange;
@@ -35,7 +36,7 @@ int RenderLight(in uint lightIndex, in Material material, in MaterialInfo materi
 #endif
 
 	ExtractEntityInfo(lightIndex, lightmatrix, color, flags);	
-	ExtractLightInfo(lightIndex, shadowMapLayer, shadowMap2ID, lightrange, coneangles, shadowrange, lightflags, shadowkernel);
+	ExtractLightInfo(lightIndex, shadowMapLayer, shadowMap2ID, lightrange, coneangles, shadowrange, lightflags, shadowkernel, cascadedistance);
 	specular = color;
 
 	const int falloffmode = ((lightflags & ENTITYFLAGS_LIGHT_LINEARFALLOFF) != 0) ? LIGHTFALLOFF_LINEAR : LIGHTFALLOFF_INVERSESQUARE;
@@ -84,7 +85,7 @@ int RenderLight(in uint lightIndex, in Material material, in MaterialInfo materi
 				shadowCoord.y *= -1.0f;
 				shadowCoord.xy += 0.5f;
 			}
-			shadowCoord.z -= 0.001f;
+			shadowCoord.z *= 0.98f;
 			shadowCoord.z = PositionToDepth(shadowCoord.z, shadowrange);
 			shadowCoord.w = shadowCoord.z;
 			shadowCoord.z = float(shadowMapLayer - 1);
@@ -206,7 +207,7 @@ int RenderLight(in uint lightIndex, in Material material, in MaterialInfo materi
 
 			float dp = 1.0f - dot(normal, lightDir);
 			float angle = radians(90.0f * dp);
-			shadowCoord.w -= 0.001 + sin(angle) * 0.15f;
+			shadowCoord.w *= 0.99f;
 
 			shadowCoord.w = PositionToDepth(shadowCoord.w, lightrange);
 			shadowCoord.z = float(shadowMapLayer - 1 + face);
@@ -256,13 +257,13 @@ int RenderLight(in uint lightIndex, in Material material, in MaterialInfo materi
 		vec3 camspacepos = (CameraInverseMatrix * vec4(position, 1.0)).xyz;
 		mat4 shadowmat;
 		visibility = 1.0f;
-		if (camspacepos.z <= 80.0)
+		if (camspacepos.z <= cascadedistance * 8.0f)
 		{
 			int index = 0;
 			shadowmat = ExtractCameraProjectionMatrix(lightIndex, index);
-			if (camspacepos.z > CameraRange.x + 10.0) index = 1;
-			if (camspacepos.z > CameraRange.x + 20.0) index = 2;
-			if (camspacepos.z > CameraRange.x + 40.0) index = 3;
+			if (camspacepos.z > cascadedistance) index = 1;
+			if (camspacepos.z > cascadedistance * 2.0f) index = 2;
+			if (camspacepos.z > cascadedistance * 4.0f) index = 3;
 			uint sublight = floatBitsToUint(shadowmat[0][index]);
 			mat4 shadowrendermatrix = ExtractLightShadowRenderMatrix(sublight);
 			shadowCoord.xyz = (shadowrendermatrix * vec4(position, 1.0f)).xyz;
@@ -275,11 +276,12 @@ int RenderLight(in uint lightIndex, in Material material, in MaterialInfo materi
 			if (shadowMapLayer != 0 /*&& WorldShadowMapHandle != uvec2(0)*/)
 			{
 				shadowCoord.w = PositionToLinearDepth(shadowCoord.z, shadowrange);
-				shadowCoord.w -= 0.0002f + 0.0004f * float(index);	
+				shadowCoord.w -= 0.00015f * float(index + 1);	
 				shadowCoord.z = float(shadowMapLayer.x - 1);
 				//float samp = shadowSample(sampler2DArrayShadow(WorldShadowMapHandle), shadowCoord).r;
 				float samp = shadowSample(DirectionalShadowmapAtlas, shadowCoord).r;
-				if (camspacepos.z > CameraRange.x + 70.0) samp = 1.0f - (1.0f - samp) * (1.0 - (camspacepos.z - 70.0) / 10.0);
+				cascadedistance *= 8.0f;
+				if (camspacepos.z > cascadedistance * 0.9f) samp = 1.0f - (1.0f - samp) * (1.0 - (camspacepos.z - cascadedistance * 0.9f) / (cascadedistance * 0.1f));
 				visibility = samp;
 				attenuation *= samp;
 			}

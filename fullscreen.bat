@@ -1,0 +1,1 @@
+XFORM.exe -fullscreen +map "Maps/xform.ultra"

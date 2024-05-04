@@ -1,0 +1,134 @@
+{
+	"scene": {
+		"entities": [
+			{
+				"castshadows": false,
+				"collisiontype": 0,
+				"components": {
+					"FirstPersonControls": {
+						"eyeheight": 1.65,
+						"fov": 54,
+						"jumpforce": 4,
+						"jumplunge": 1.2,
+						"mouselookspeed": 1,
+						"mousesmoothing": 0,
+						"movespeed": 4
+					}
+				},
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"name": "Player",
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "9947cc16-96d5-4624-87ec-26f92f5ff25a"
+			}
+		],
+		"extras": {
+			"viewports": [
+				{
+					"cameraposition": [
+						-0.769206,
+						1.94202,
+						-2.75476
+					],
+					"camerarotation": [
+						28.1849,
+						20.8781,
+						0
+					],
+					"gridsize": 0,
+					"view": 0,
+					"zoom": 1.42815
+				},
+				{
+					"cameraposition": [
+						0.308013,
+						2.89603e-08,
+						0.161964
+					],
+					"camerarotation": [
+						90,
+						0,
+						0
+					],
+					"gridsize": 0,
+					"view": 3,
+					"zoom": 429.982
+				},
+				{
+					"cameraposition": [
+						0,
+						0,
+						0
+					],
+					"camerarotation": [
+						0,
+						0,
+						0
+					],
+					"gridsize": 0,
+					"view": 5,
+					"zoom": 100
+				},
+				{
+					"cameraposition": [
+						-1.12719e-08,
+						0.12418,
+						0.0630367
+					],
+					"camerarotation": [
+						0,
+						90,
+						0
+					],
+					"gridsize": 0,
+					"view": 1,
+					"zoom": 619.174
+				}
+			]
+		}
+	}
+}

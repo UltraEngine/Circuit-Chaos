@@ -1,0 +1,30 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"color": [
+			1.0,
+			1.0,
+			1.0,
+			0.501960813999176
+		],
+		"displacement": [
+			0.05000000074505806,
+			-0.02500000037252903
+		],
+		"glossiness": 0.0,
+		"metallic": 1.0,
+		"pickmode": true,
+		"roughness": 0.10000000149011612,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"specular": [
+			0.0,
+			0.0,
+			0.0
+		],
+		"texture0": "./glass02.dds",
+		"texture5": "./glass02_OcclusionMetallicRoughness.dds",
+		"transparent": true
+	}
+}

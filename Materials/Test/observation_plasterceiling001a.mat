@@ -1,0 +1,23 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"displacement": [
+			0.05000000074505806,
+			-0.02500000037252903
+		],
+		"glossiness": 0.0,
+		"metallic": 0.0,
+		"pickmode": true,
+		"roughness": 0.800000011920929,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"specular": [
+			0.0,
+			0.0,
+			0.0
+		],
+		"texture0": "./observation_plasterceiling001a.dds",
+		"texture1": "./observation_plasterceiling001a_normal.dds"
+	}
+}

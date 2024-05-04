@@ -1,0 +1,26 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"displacement": [
+			0.05000000074505806,
+			-0.02500000037252903
+		],
+		"glossiness": 0.0,
+		"metallic": 1.0,
+		"pickmode": true,
+		"roughness": 1.0,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"specular": [
+			0.0,
+			0.0,
+			0.0
+		],
+		"tessellation": true,
+		"texture0": "./office-fabric.dds",
+		"texture1": "./office-fabric_normal.dds",
+		"texture2": "./office-fabric_OcclusionMetallicRoughness.dds",
+		"texture5": "./office-fabric_OcclusionMetallicRoughness.dds"
+	}
+}
