@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Components\Player\FirstPersonControls.cpp">
+      <Filter>Source Files\Components\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Motion\Mover.cpp">
+      <Filter>Source Files\Components\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Motion\SlidingDoor.cpp">
+      <Filter>Source Files\Components\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Triggers\CollisionTrigger.cpp">
+      <Filter>Source Files\Components\Triggers</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Player\CameraControls.cpp">
+      <Filter>Source Files\Components\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Player\VRPlayer.cpp">
+      <Filter>Source Files\Components\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Components\Player\ThirdPersonControls.cpp">
+      <Filter>Source Files\Components\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UltraEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Steamworks\Steamworks.cpp">
+      <Filter>Source Files\Steamworks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ComponentSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\project.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\projecticon.ico">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{a2ff38e1-d464-4336-87f7-9662c2e01bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{c344875a-730a-4732-8980-a999bb14e8f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{41477617-9af0-4bc7-b167-b398fbc69c07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{011c4928-fdd2-4c8d-b41b-9d63eefd8bee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Motion">
+      <UniqueIdentifier>{c554727a-aeea-4717-8e1b-9f441bb1023c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Player">
+      <UniqueIdentifier>{ae8475dd-eb1b-4ed5-81b5-769aac79a5c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Triggers">
+      <UniqueIdentifier>{2a1fed13-1f91-4c02-8962-1f067f3aebbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Steamworks">
+      <UniqueIdentifier>{5f69be62-d822-41da-aaf5-ad15cf8bcb04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
