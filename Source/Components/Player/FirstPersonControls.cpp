@@ -121,7 +121,8 @@ void FirstPersonControls::Update()
 		crouch = window->KeyDown(KEY_CONTROL);
 	}
 	entity->SetInput(camera->rotation.y, movement.z, movement.x, jump, crouch);
-		
+	
+	// TODO: Need something like entity->GetCrouched() so we don't have to do a raycast ourselves. 
 	float eye = eyeheight;
 	if (crouch) eye = croucheyeheight;
 	float y = TransformPoint(currentcameraposition, nullptr, entity).y;
@@ -141,6 +142,7 @@ bool FirstPersonControls::Load(table& properties, shared_ptr<Stream> binstream, 
 {
 	if (properties["fov"].is_number()) fov = properties["fov"];
 	if (properties["eyeheight"].is_number()) eyeheight = properties["eyeheight"];
+	if (properties["croucheyeheight"].is_number()) croucheyeheight = properties["croucheyeheight"];
 	if (properties["mouselookspeed"].is_number()) mouselookspeed = properties["mouselookspeed"];
     if (properties["mousesmoothing"].is_number()) mousesmoothing = properties["mousesmoothing"];
     if (properties["mouselookspeed"].is_number()) mouselookspeed = properties["mouselookspeed"];
@@ -154,6 +156,7 @@ bool FirstPersonControls::Save(table& properties, shared_ptr<Stream> binstream, 
 {
 	properties["fov"] = fov;
 	properties["eyeheight"] = eyeheight;
+	properties["croucheyeheight"] = croucheyeheight;
 	properties["mousesmoothing"] = mousesmoothing;
 	properties["mouselookspeed"] = mouselookspeed;
 	properties["movespeed"] = movespeed;

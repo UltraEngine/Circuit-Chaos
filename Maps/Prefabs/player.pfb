@@ -6,9 +6,10 @@
 				"collisiontype": 0,
 				"components": {
 					"FirstPersonControls": {
+						"croucheyeheight": 0.64,
 						"eyeheight": 1.65,
 						"fov": 54,
-						"jumpforce": 4,
+						"jumpforce": 4.2,
 						"jumplunge": 1.2,
 						"mouselookspeed": 1,
 						"mousesmoothing": 0,
@@ -96,7 +97,7 @@
 					],
 					"gridsize": 0,
 					"view": 3,
-					"zoom": 429.982
+					"zoom": 100
 				},
 				{
 					"cameraposition": [
@@ -126,7 +127,7 @@
 					],
 					"gridsize": 0,
 					"view": 1,
-					"zoom": 619.174
+					"zoom": 100
 				}
 			]
 		}

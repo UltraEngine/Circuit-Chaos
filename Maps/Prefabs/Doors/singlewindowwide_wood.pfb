@@ -1,0 +1,122 @@
+{
+	"scene": {
+		"entities": [
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"group": "1507903540112",
+				"kids": [
+					{
+						"castshadows": true,
+						"collisiontype": 1,
+						"extras": {},
+						"friction": [
+							0.5,
+							0.8999999761581421
+						],
+						"matrix": [
+							"0x3f800000",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0xbf2147ae",
+							"0x31f5c28f",
+							"0xb2000000",
+							"0x3f800000"
+						],
+						"model": {
+							"islimb": false,
+							"path": "Models/Doors/doorsinglewindow_wood.mdl"
+						},
+						"name": "DoorSingleWindow",
+						"physicsmode": 1,
+						"pickmode": 1,
+						"position": [
+							"0xbf2147ae",
+							"0x31f5c28f",
+							"0xb2000000"
+						],
+						"quaternion": [
+							"0x80000000",
+							"0x80000000",
+							"0x80000000",
+							"0x3f800000"
+						],
+						"reflection": true,
+						"rotation": [
+							"0x80000000",
+							"0x0",
+							"0x0"
+						],
+						"scale": [
+							"0x3f800000",
+							"0x3f800000",
+							"0x3f800000"
+						],
+						"uuid": "ee9130a4-32ab-4c9f-9986-23814faeeb52"
+					}
+				],
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Doors/doorsingleframewide_chrome.mdl"
+				},
+				"name": "DoorSingleFrameWide",
+				"physicsmode": 0,
+				"pickmode": 1,
+				"position": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "1d4ed472-ade8-456d-bc81-e5264401484a"
+			}
+		]
+	}
+}

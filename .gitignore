@@ -19,6 +19,7 @@ backup/**
 
 # Shader Source Code:
 Source/Shaders/**
+Shaders/**
 
 # Compressed backups:
 *.zip
@@ -26,3 +27,7 @@ Source/Shaders/**
 *.7z
 *.rar
 *.tar.gz
+
+# Ignore GLTF
+*.gltf
+*.bin

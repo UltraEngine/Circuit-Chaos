@@ -14,6 +14,11 @@
                 "value": 1.7
             },
             {
+                "name": "croucheyeheight",
+                "label": "Crouch Eye Height",
+                "value": 1.0
+            },
+            {
                 "name": "mousesmoothing",
                 "label": "Mouse smoothing",
                 "value": 0.0

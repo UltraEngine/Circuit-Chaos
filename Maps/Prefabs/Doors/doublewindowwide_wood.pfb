@@ -1,0 +1,180 @@
+{
+	"scene": {
+		"entities": [
+			{
+				"castshadows": true,
+				"collisiontype": 1,
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"group": "1507903540112",
+				"kids": [
+					{
+						"castshadows": true,
+						"collisiontype": 1,
+						"extras": {},
+						"friction": [
+							0.5,
+							0.8999999761581421
+						],
+						"matrix": [
+							"0xbf800000",
+							"0x0",
+							"0x343bbd34",
+							"0x0",
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0x0",
+							"0xb43bbd34",
+							"0x0",
+							"0xbf800000",
+							"0x0",
+							"0x3fa147ae",
+							"0x0",
+							"0x0",
+							"0x3f800000"
+						],
+						"model": {
+							"islimb": false,
+							"path": "Models/Doors/doordoublewindow_wood.mdl"
+						},
+						"name": "DoorDoubleWindow",
+						"physicsmode": 1,
+						"pickmode": 1,
+						"position": [
+							"0x3fa147ae",
+							"0x0",
+							"0x0"
+						],
+						"quaternion": [
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0x33bbbd34"
+						],
+						"reflection": true,
+						"rotation": [
+							"0x80000000",
+							"0xc3340000",
+							"0x80000000"
+						],
+						"scale": [
+							"0x3f800000",
+							"0x3f800000",
+							"0x3f800000"
+						],
+						"uuid": "36fb6e9d-ed3b-4696-945d-087560d6d031"
+					},
+					{
+						"castshadows": true,
+						"collisiontype": 1,
+						"extras": {},
+						"friction": [
+							0.5,
+							0.8999999761581421
+						],
+						"group": "1507903540112",
+						"matrix": [
+							"0x3f800000",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0xbfa147ae",
+							"0x0",
+							"0x0",
+							"0x3f800000"
+						],
+						"model": {
+							"islimb": false,
+							"path": "Models/Doors/doordoublewindow_wood.mdl"
+						},
+						"name": "DoorDoubleWindow",
+						"physicsmode": 1,
+						"pickmode": 1,
+						"position": [
+							"0xbfa147ae",
+							"0x0",
+							"0x0"
+						],
+						"quaternion": [
+							"0x80000000",
+							"0x80000000",
+							"0x80000000",
+							"0x3f800000"
+						],
+						"reflection": true,
+						"rotation": [
+							"0x80000000",
+							"0x0",
+							"0x0"
+						],
+						"scale": [
+							"0x3f800000",
+							"0x3f800000",
+							"0x3f800000"
+						],
+						"uuid": "24e466cc-0d7d-4264-8916-772abeb475e9"
+					}
+				],
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"model": {
+					"islimb": false,
+					"path": "Models/Doors/doordoubleframewide_chrome.mdl"
+				},
+				"name": "DoorDoubleFrameWide",
+				"physicsmode": 0,
+				"pickmode": 1,
+				"position": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "87df7b33-0bc7-42ad-be82-5abcff6e93a0"
+			}
+		]
+	}
+}

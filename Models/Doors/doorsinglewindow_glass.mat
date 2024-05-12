@@ -1,0 +1,29 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"color": [
+			1.0,
+			1.0,
+			1.0,
+			0.7529412508010864
+		],
+		"displacement": [
+			0.10000000149011612,
+			0.0
+		],
+		"glossiness": 1.0,
+		"metallic": 1.0,
+		"pickmode": true,
+		"roughness": 0.05000000074505806,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": false,
+		"specular": [
+			1.0,
+			1.0,
+			1.0
+		],
+		"texture0": "./doorsinglewindow_glass.png",
+		"transparent": true
+	}
+}
