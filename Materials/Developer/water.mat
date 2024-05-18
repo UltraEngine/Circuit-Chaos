@@ -1,0 +1,29 @@
+{
+	"material": {
+		"alphacutoff": 0.5,
+		"alphamask": false,
+		"color": [
+			1.0,
+			1.0,
+			1.0,
+			0.03921568766236305
+		],
+		"displacement": [
+			0.05000000074505806,
+			-0.02500000037252903
+		],
+		"glossiness": 1.0,
+		"metallic": 1.0,
+		"pickmode": true,
+		"roughness": 0.20000000298023224,
+		"shaderfamily": "Shaders/PBR.fam",
+		"shadow": true,
+		"specular": [
+			1.0,
+			1.0,
+			1.0
+		],
+		"texture1": "Materials/Effects/water01.dds",
+		"transparent": true
+	}
+}
