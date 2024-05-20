@@ -10,6 +10,6 @@
 		"roughness": 0.800000011920929,
 		"shaderfamily": "Shaders/PBR.fam",
 		"shadow": true,
-		"texture0": "./Textures/grate.dds"
+		"texture0": "./grate.dds"
 	}
 }

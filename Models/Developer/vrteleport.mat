@@ -9,6 +9,6 @@
 		"roughness": 0.5,
 		"shaderfamily": "Shaders/Unlit.fam",
 		"shadow": false,
-		"texture0": "./Textures/vrteleport.dds"
+		"texture0": "./vrteleport.dds"
 	}
 }

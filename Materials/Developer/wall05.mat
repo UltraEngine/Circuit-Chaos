@@ -9,6 +9,6 @@
 		"roughness": 1.0,
 		"shaderfamily": "Shaders/PBR.fam",
 		"shadow": true,
-		"texture0": "./Textures/wall05.dds"
+		"texture0": "./wall05.dds"
 	}
 }

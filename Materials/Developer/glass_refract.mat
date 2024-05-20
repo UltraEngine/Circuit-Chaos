@@ -16,7 +16,7 @@
 		"shaderfamily": "Shaders/PBR.fam",
 		"shadow": true,
 		"tessellation": true,
-		"texture1": "./Textures/refract01.dds",
+		"texture1": "./refract01.dds",
 		"transparent": true
 	}
 }

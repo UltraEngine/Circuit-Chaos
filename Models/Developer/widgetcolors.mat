@@ -9,6 +9,6 @@
 		"roughness": 1.0,
 		"shaderfamily": "Shaders/PBR.fam",
 		"shadow": true,
-		"texture0": "./Textures/widgetcolors.dds"
+		"texture0": "./widgetcolors.dds"
 	}
 }

@@ -9,6 +9,6 @@
 		"roughness": 1.0,
 		"shaderfamily": "Shaders/PBR.fam",
 		"shadow": true,
-		"texture0": "./Textures/door.dds"
+		"texture0": "./door.dds"
 	}
 }

@@ -9,8 +9,8 @@
 		"shaderfamily": "Shaders/PBR.fam",
 		"shadow": true,
 		"tessellation": true,
-		"texture0": "./Textures/dirt01.dds",
-		"texture1": "./Textures/dirt01_normal.dds",
-		"texture3": "./Textures/dirt01_height.dds"
+		"texture0": "./dirt01.dds",
+		"texture1": "./dirt01_normal.dds",
+		"texture3": "./dirt01_height.dds"
 	}
 }
