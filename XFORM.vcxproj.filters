@@ -31,6 +31,9 @@
     <ClCompile Include="Source\Steamworks\Steamworks.cpp">
       <Filter>Source Files\Steamworks</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Components\Weapons\FPSWeapon.cpp">
+      <Filter>Source Files\Components\Weapons</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\resource.h">
@@ -41,6 +44,30 @@
     </ClInclude>
     <ClInclude Include="Source\targetver.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Motion\SlidingDoor.h">
+      <Filter>Header Files\Components\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Motion\Mover.h">
+      <Filter>Header Files\Components\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Player\VRPlayer.h">
+      <Filter>Header Files\Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Player\CameraControls.h">
+      <Filter>Header Files\Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Player\FirstPersonControls.h">
+      <Filter>Header Files\Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Player\ThirdPersonControls.h">
+      <Filter>Header Files\Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Triggers\CollisionTrigger.h">
+      <Filter>Header Files\Components\Triggers</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Weapons\FPSWeapon.h">
+      <Filter>Header Files\Components\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +102,24 @@
     </Filter>
     <Filter Include="Source Files\Steamworks">
       <UniqueIdentifier>{5f69be62-d822-41da-aaf5-ad15cf8bcb04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components">
+      <UniqueIdentifier>{5390f53c-76e6-4720-a67d-b1d5cd381f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components\Motion">
+      <UniqueIdentifier>{d3d41463-e6b0-40a1-8c7a-a428e9891d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components\Player">
+      <UniqueIdentifier>{628139ac-c6b5-43f6-bef9-05ab00809b0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components\Triggers">
+      <UniqueIdentifier>{8a1df1e1-ad69-45ef-a6a3-ab51cea89a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Weapons">
+      <UniqueIdentifier>{cb51f3a4-38a2-43cc-b213-6fde2cd26850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Components\Weapons">
+      <UniqueIdentifier>{7f2a32f9-2ddf-4bb9-a787-e5bf529672a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

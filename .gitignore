@@ -31,3 +31,6 @@ Shaders/**
 # Ignore GLTF
 *.gltf
 *.bin
+
+# Ignore viewmodels
+Models/Viewmodels/**

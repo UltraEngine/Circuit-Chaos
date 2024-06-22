@@ -1,0 +1,38 @@
+{
+    "component": 
+    {
+        "properties": 
+        [
+            {
+                "name": "anim_idle",
+                "label": "Idle Animation",
+                "value": "idle"
+            },
+            {
+                "name": "anim_fire",
+                "label": "Fire Animation",
+                "value": "shoot"
+            },
+            {
+                "name": "anim_reload",
+                "label": "Reload Animation",
+                "value": "reload"
+            },
+            {
+                "name": "anim_walk",
+                "label": "Walking Animation",
+                "value": "walk"
+            },            
+            {
+                "name": "viewmodelfov",
+                "label": "Viewmodel Fov",
+                "value": 54
+            }, 
+            {
+                "name": "drawonlayer",
+                "label": "Draw On Layer",
+                "value": true
+            }                        
+        ]
+    }
+}

@@ -8,6 +8,7 @@
 #include "Components/Player/ThirdPersonControls.h"
 #include "Components/Player/VRPlayer.h"
 #include "Components/Triggers/CollisionTrigger.h"
+#include "Components/Weapons/FPSWeapon.h"
 
 void RegisterComponents()
 {
@@ -18,4 +19,5 @@ void RegisterComponents()
     RegisterComponent<ThirdPersonControls>();
     RegisterComponent<VRPlayer>();
     RegisterComponent<CollisionTrigger>();
+    RegisterComponent<FPSWeapon>();
 }

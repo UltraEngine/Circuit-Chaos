@@ -1,6 +1,7 @@
 #pragma once
 #include "UltraEngine.h"
 #include "FirstPersonControls.h"
+#include "../Weapons/FPSWeapon.h"
 
 using namespace UltraEngine;
 
@@ -21,6 +22,9 @@ void FirstPersonControls::Start()
 	camera->SetFov(fov);
 	currentcameraposition = camera->GetPosition(true);
 	freelookrotation = entity->GetRotation(true);
+
+	// TEMP!
+	GiveWeapon("Maps/Prefabs/Viewmodels/rifle.pfb");
 }
 
 void FirstPersonControls::Update()
@@ -138,6 +142,22 @@ shared_ptr<Component> FirstPersonControls::Copy()
 	return std::make_shared<FirstPersonControls>(*this);
 }
 
+void FirstPersonControls::GiveWeapon(const WString prefabpath)
+{
+	auto pfb = LoadPrefab(GetEntity()->GetWorld(), prefabpath);
+	if (pfb)
+	{
+		pfb->SetMatrix(camera->GetMatrix(true), true);
+
+		auto wpn = pfb->GetComponent<FPSWeapon>();
+		if (wpn)
+		{
+			wpn->AttachToPlayer(Self()->As<FirstPersonControls>());
+			weapons.push_back(pfb);
+		}
+	}
+}
+
 bool FirstPersonControls::Load(table& properties, shared_ptr<Stream> binstream, shared_ptr<Map> scene, const LoadFlags flags)
 {
 	if (properties["fov"].is_number()) fov = properties["fov"];
@@ -163,4 +183,9 @@ bool FirstPersonControls::Save(table& properties, shared_ptr<Stream> binstream, 
 	properties["jumpforce"] = jumpforce;
 	properties["jumplunge"] = jumplunge;
 	return true;
+}
+
+shared_ptr<Camera> FirstPersonControls::GetCamera()
+{
+	return camera;
 }

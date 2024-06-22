@@ -1,0 +1,246 @@
+{
+	"scene": {
+		"entities": [
+			{
+				"castshadows": false,
+				"collisiontype": 0,
+				"components": {
+					"FPSWeapon": {
+						"anim_fire": "shoot",
+						"anim_idle": "idle",
+						"anim_reload": "reload4",
+						"anim_walk": "walk",
+						"drawonlayer": true,
+						"viewmodelfov": 54
+					}
+				},
+				"extras": {},
+				"friction": [
+					0.5,
+					0.8999999761581421
+				],
+				"group": "1598841102176",
+				"kids": [
+					{
+						"castshadows": false,
+						"collisiontype": 0,
+						"extras": {},
+						"friction": [
+							0.5,
+							0.8999999761581421
+						],
+						"matrix": [
+							"0x3f800000",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0x3d0f5c29",
+							"0xbd0f5c29",
+							"0x3e828f5c",
+							"0x3f800000"
+						],
+						"name": "Muzzle",
+						"physicsmode": 0,
+						"pickmode": 0,
+						"position": [
+							"0x3d0f5c29",
+							"0xbd0f5c29",
+							"0x3e828f5c"
+						],
+						"quaternion": [
+							"0x80000000",
+							"0x80000000",
+							"0x80000000",
+							"0x3f800000"
+						],
+						"reflection": true,
+						"rotation": [
+							"0x80000000",
+							"0x0",
+							"0x0"
+						],
+						"scale": [
+							"0x3f800000",
+							"0x3f800000",
+							"0x3f800000"
+						],
+						"uuid": "fc7b385b-9534-4eea-becc-f966accd6101"
+					},
+					{
+						"castshadows": true,
+						"collisiontype": 1,
+						"extras": {},
+						"friction": [
+							0.5,
+							0.8999999761581421
+						],
+						"matrix": [
+							"0xbb031269",
+							"0x0",
+							"0x2fc03ea3",
+							"0x0",
+							"0x0",
+							"0x3b03126f",
+							"0x0",
+							"0x0",
+							"0xafc03ea3",
+							"0x0",
+							"0xbb031269",
+							"0x0",
+							"0x3ca3d6aa",
+							"0xbeae147b",
+							"0xb3000000",
+							"0x3f800000"
+						],
+						"model": {
+							"islimb": false,
+							"path": "Models/ViewModels/Rifle/rifle02.mdl"
+						},
+						"name": "U3D_SKIN_MESH",
+						"physicsmode": 0,
+						"pickmode": 1,
+						"position": [
+							"0x3ca3d6aa",
+							"0xbeae147b",
+							"0xb3000000"
+						],
+						"quaternion": [
+							"0x0",
+							"0x3f800000",
+							"0x0",
+							"0x33bbbd33"
+						],
+						"reflection": true,
+						"rotation": [
+							"0x80000000",
+							"0xc3340000",
+							"0x80000000"
+						],
+						"scale": [
+							"0x3b031269",
+							"0x3b03126f",
+							"0x3b031269"
+						],
+						"uuid": "5bf9b291-7775-486a-a0a4-4555d5a8ed60"
+					}
+				],
+				"matrix": [
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"name": "Rifle",
+				"physicsmode": 0,
+				"pickmode": 0,
+				"position": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"quaternion": [
+					"0x0",
+					"0x0",
+					"0x0",
+					"0x3f800000"
+				],
+				"reflection": true,
+				"rotation": [
+					"0x0",
+					"0x0",
+					"0x0"
+				],
+				"scale": [
+					"0x3f800000",
+					"0x3f800000",
+					"0x3f800000"
+				],
+				"uuid": "db90ced8-14bf-4a24-a177-6fe21c964226"
+			}
+		],
+		"extras": {
+			"viewports": [
+				{
+					"cameraposition": [
+						-0.273442,
+						0.0189475,
+						0.200949
+					],
+					"camerarotation": [
+						4.23446,
+						82.3046,
+						0
+					],
+					"gridsize": 0,
+					"view": 0,
+					"zoom": 1.42815
+				},
+				{
+					"cameraposition": [
+						0.035,
+						0.577372,
+						0.255
+					],
+					"camerarotation": [
+						90,
+						0,
+						0
+					],
+					"gridsize": 0,
+					"view": 3,
+					"zoom": 100
+				},
+				{
+					"cameraposition": [
+						0.035,
+						-0.035,
+						-0.357372
+					],
+					"camerarotation": [
+						0,
+						0,
+						0
+					],
+					"gridsize": 0,
+					"view": 5,
+					"zoom": 100
+				},
+				{
+					"cameraposition": [
+						-0.577372,
+						-0.035,
+						0.255
+					],
+					"camerarotation": [
+						0,
+						90,
+						0
+					],
+					"gridsize": 0,
+					"view": 1,
+					"zoom": 100
+				}
+			]
+		}
+	}
+}

@@ -117,6 +117,7 @@
     <ClCompile Include="Source\Components\Player\ThirdPersonControls.cpp" />
     <ClCompile Include="Source\Components\Player\VRPlayer.cpp" />
     <ClCompile Include="Source\Components\Triggers\CollisionTrigger.cpp" />
+    <ClCompile Include="Source\Components\Weapons\FPSWeapon.cpp" />
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\Steamworks\Steamworks.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -129,6 +130,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\ComponentSystem.h" />
+    <ClInclude Include="Source\Components\Motion\Mover.h" />
+    <ClInclude Include="Source\Components\Motion\SlidingDoor.h" />
+    <ClInclude Include="Source\Components\Player\CameraControls.h" />
+    <ClInclude Include="Source\Components\Player\FirstPersonControls.h" />
+    <ClInclude Include="Source\Components\Player\ThirdPersonControls.h" />
+    <ClInclude Include="Source\Components\Player\VRPlayer.h" />
+    <ClInclude Include="Source\Components\Triggers\CollisionTrigger.h" />
+    <ClInclude Include="Source\Components\Weapons\FPSWeapon.h" />
     <ClInclude Include="Source\resource.h" />
     <ClInclude Include="Source\targetver.h" />
   </ItemGroup>
