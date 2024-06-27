@@ -35,6 +35,7 @@ public:
 
     virtual void AttachToPlayer(std::shared_ptr<Component> playercomponent);
 
+    virtual void Idle();
     virtual void Fire();
     virtual void Reload();
 

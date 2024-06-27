@@ -6,7 +6,7 @@
 				"collisiontype": 0,
 				"components": {
 					"FPSWeapon": {
-						"anim_fire": "shoot",
+						"anim_fire": "shot",
 						"anim_idle": "idle",
 						"anim_reload": "reload4",
 						"anim_walk": "walk",
@@ -19,7 +19,7 @@
 					0.5,
 					0.8999999761581421
 				],
-				"group": "1598841102176",
+				"group": "2545665569328",
 				"kids": [
 					{
 						"castshadows": false,
@@ -182,13 +182,13 @@
 			"viewports": [
 				{
 					"cameraposition": [
-						-0.273442,
-						0.0189475,
-						0.200949
+						-0.0182477,
+						0.150576,
+						-0.00863543
 					],
 					"camerarotation": [
-						4.23446,
-						82.3046,
+						44.4524,
+						20.5121,
 						0
 					],
 					"gridsize": 0,

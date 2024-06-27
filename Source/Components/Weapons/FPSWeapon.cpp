@@ -7,6 +7,16 @@ using namespace UltraEngine;
 
 const int RENDERLAYER_VIEWMODEL = 8;
 
+void AnimationDone(shared_ptr<Skeleton> skeleton, shared_ptr<Object> extra)
+{
+	auto wpn = extra->As<FPSWeapon>();
+	if (wpn)
+	{
+		Print("Done!");
+		wpn->Idle();
+	}
+}
+
 FPSWeapon::FPSWeapon()
 {
     name = "FPSWeapon";
@@ -42,6 +52,8 @@ void FPSWeapon::Start()
 
 	Assert(viewmodel.lock(), "No viewmodel found for FPSWeapon!");
 	viewmodel.lock()->SetShadows(false);
+
+	viewmodel.lock()->skeleton->AddHook(0, 0, AnimationDone, Self());
 }
 
 void FPSWeapon::Update()
@@ -58,8 +70,22 @@ void FPSWeapon::Update()
 	}
 	else if (moving)
 	{
-		viewmodel.lock()->Animate(animations[ANIM_IDLE], 0.25f);
+		Idle();
 		moving = false;
+	}
+
+	auto window = ActiveWindow();
+	if (window)
+	{
+		if (window->KeyDown(KEY_R))
+		{
+			Reload();
+		}
+
+		if (window->MouseDown(MOUSE_LEFT))
+		{
+			Fire();
+		}
 	}
 }
 
@@ -135,12 +161,17 @@ void FPSWeapon::AttachToPlayer(std::shared_ptr<Component> playercomponent)
 	}
 }
 
+void FPSWeapon::Idle()
+{
+	viewmodel.lock()->Animate(animations[ANIM_IDLE], 0.25f);
+}
+
 void FPSWeapon::Fire()
 {
-	viewmodel.lock()->Animate(animations[ANIM_FIRE], 0.25f);
+	viewmodel.lock()->Animate(animations[ANIM_FIRE], 1.00f, 250, ANIMATION_ONCE);
 }
 
 void FPSWeapon::Reload()
 {
-	viewmodel.lock()->Animate(animations[ANIM_RELOAD], 0.25f);
+	viewmodel.lock()->Animate(animations[ANIM_RELOAD], 1.00f, ANIMATION_ONCE);
 }
