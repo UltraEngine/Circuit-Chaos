@@ -110,6 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\AnimationManager.cpp" />
     <ClCompile Include="Source\Components\Motion\Mover.cpp" />
     <ClCompile Include="Source\Components\Motion\SlidingDoor.cpp" />
     <ClCompile Include="Source\Components\Player\CameraControls.cpp" />
@@ -129,6 +130,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Source\AnimationManager.h" />
     <ClInclude Include="Source\ComponentSystem.h" />
     <ClInclude Include="Source\Components\Motion\Mover.h" />
     <ClInclude Include="Source\Components\Motion\SlidingDoor.h" />

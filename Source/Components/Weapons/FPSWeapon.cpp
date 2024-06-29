@@ -7,13 +7,15 @@ using namespace UltraEngine;
 
 const int RENDERLAYER_VIEWMODEL = 8;
 
-void AnimationDone(shared_ptr<Skeleton> skeleton, shared_ptr<Object> extra)
+void FPSWeapon::AnimationDone(const UltraEngine::WString name, shared_ptr<UltraEngine::Object> object)
 {
-	auto wpn = extra->As<FPSWeapon>();
+	auto wpn = object->As<FPSWeapon>();
 	if (wpn)
 	{
-		Print("Done!");
-		wpn->Idle();
+		if (name == wpn->animations[ANIM_RELOAD])
+		{
+			wpn->reloading = false;
+		}
 	}
 }
 
@@ -26,6 +28,9 @@ FPSWeapon::FPSWeapon()
 	drawonlayer = false;
 	animations.fill("");
 	animations[ANIM_IDLE] = "idle";
+	animationmanger = NULL;
+	reloading = false;
+	firing = false;
 }
 
 void FPSWeapon::Start()
@@ -53,38 +58,65 @@ void FPSWeapon::Start()
 	Assert(viewmodel.lock(), "No viewmodel found for FPSWeapon!");
 	viewmodel.lock()->SetShadows(false);
 
-	viewmodel.lock()->skeleton->AddHook(0, 0, AnimationDone, Self());
+	int i = viewmodel.lock()->FindAnimation(animations[ANIM_IDLE]);
+	animationmanger = CreateAnimationManager(viewmodel.lock(), i);
+	animationmanger->SetAnimationSpeed(animations[ANIM_IDLE], 0.25f);
+	animationmanger->AddAnimation(animations[ANIM_WALK], 0.25);
+	animationmanger->AddAnimation(animations[ANIM_FIRE]);
+	animationmanger->AddAnimation(animations[ANIM_RELOAD], 1.0f, ANIMATION_ONCE);
+	animationmanger->AddCompleteHook(FPSWeapon::AnimationDone, Self());
 }
 
 void FPSWeapon::Update()
 {
 	static bool moving = false;
-	auto velo = playerentity.lock()->GetVelocity().xz().Length();
-	if (velo > 4.0f * 0.5)
+	//static bool reloading = false;
+
+	if (!reloading && !firing)
 	{
-		if (!playerentity.lock()->GetAirborne())
+		auto velo = playerentity.lock()->GetVelocity().xz().Length();
+		if (velo > 4.0f * 0.5)
 		{
-			viewmodel.lock()->Animate(animations[ANIM_WALK], 0.25f);
-			moving = true;
+			if (!playerentity.lock()->GetAirborne())
+			{
+				animationmanger->PlayAnimation(animations[ANIM_WALK]);
+				moving = true;
+			}
+		}
+		else if (moving)
+		{
+			animationmanger->ReturnToRestingAnimation();
+			moving = false;
 		}
 	}
-	else if (moving)
+	else
 	{
-		Idle();
-		moving = false;
+		Print("Skiping");
 	}
 
 	auto window = ActiveWindow();
 	if (window)
 	{
-		if (window->KeyDown(KEY_R))
+		if (window->KeyHit(KEY_R))
 		{
+			reloading = true;
+			animationmanger->PlayAnimation(animations[ANIM_RELOAD]);
 			Reload();
 		}
 
-		if (window->MouseDown(MOUSE_LEFT))
+		if (!reloading)
 		{
-			Fire();
+			if (window->MouseDown(MOUSE_LEFT))
+			{
+				firing = true;
+				animationmanger->PlayAnimation(animations[ANIM_FIRE]);
+				Fire();
+			}
+			else if (firing)
+			{
+				firing = false;
+				animationmanger->ReturnToRestingAnimation();
+			}
 		}
 	}
 }
@@ -161,17 +193,10 @@ void FPSWeapon::AttachToPlayer(std::shared_ptr<Component> playercomponent)
 	}
 }
 
-void FPSWeapon::Idle()
-{
-	viewmodel.lock()->Animate(animations[ANIM_IDLE], 0.25f);
-}
-
 void FPSWeapon::Fire()
 {
-	viewmodel.lock()->Animate(animations[ANIM_FIRE], 1.00f, 250, ANIMATION_ONCE);
 }
 
 void FPSWeapon::Reload()
 {
-	viewmodel.lock()->Animate(animations[ANIM_RELOAD], 1.00f, ANIMATION_ONCE);
 }

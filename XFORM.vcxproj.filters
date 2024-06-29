@@ -34,6 +34,9 @@
     <ClCompile Include="Source\Components\Weapons\FPSWeapon.cpp">
       <Filter>Source Files\Components\Weapons</Filter>
     </ClCompile>
+    <ClCompile Include="Source\AnimationManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\resource.h">
@@ -68,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="Source\Components\Weapons\FPSWeapon.h">
       <Filter>Header Files\Components\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\AnimationManager.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
